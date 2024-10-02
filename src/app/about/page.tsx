@@ -2,7 +2,6 @@
 import { useThemeContext } from "@/contexts/useThemeContext";
 import Navbar from "@/components/ui/navbar";
 import Contact from "@/components/ui/contact";
-import Image from "next/image";
 
 // Type definitions for component props
 interface SectionProps {
@@ -109,13 +108,13 @@ const About: React.FC = () => {
         <Contact />
 
         <section className="flex flex-col items-center gap-4 py-8 mx-8 border-t-[1px] border-black dark:border-white">
-          <Image
-            src="/aibi.webp"
-            alt="Abdullah Ansari"
-            width={400}
-            height={400}
-            className="w-32 h-32 rounded-full shadow-black/50 shadow-lg"
-          />
+          <picture>
+            <img
+              src="./aibi.webp"
+              alt="Abdullah Ansari"
+              className="w-32 h-32 rounded-full shadow-black/50 shadow-lg"
+            />
+          </picture>
           <div className="-translate-y-1 flex flex-col items-center">
             <h2 className="text-3xl text-black dark:text-gray-200 text-left font-semibold">
               Abdullah Ansari

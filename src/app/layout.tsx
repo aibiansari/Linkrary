@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import { Raleway } from "next/font/google";
 import "./globals.css";
 
@@ -9,17 +8,6 @@ import { CategoryModalProvider } from "@/contexts/useCategoryModalContext";
 import { CategoryProvider } from "@/contexts/useCategoryContext";
 import { ThemeProvider } from "@/contexts/useThemeContext";
 import { Toaster } from "sonner";
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
 
 const raleway = Raleway({
   subsets: ["latin"],
@@ -80,9 +68,7 @@ export default function RootLayout({
           <FavoriteCardsProvider>
             <CategoryModalProvider>
               <html lang="en">
-                <body
-                  className={`${geistSans.variable} ${geistMono.variable} ${raleway.className} antialiased`}
-                >
+                <body className={`${raleway.className} antialiased`}>
                   <Toaster
                     toastOptions={{
                       style: {
