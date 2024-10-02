@@ -3,7 +3,6 @@ import { useFavoriteCardsContext } from "@/contexts/useFavoriteCardsContext";
 import { AnimatePresence, motion } from "framer-motion";
 import { cards } from "@/data/Cards";
 import React from "react";
-import Image from "next/image";
 
 interface FilterProps {
   collection: boolean;
@@ -153,14 +152,15 @@ const FilterModal = ({ collection }: FilterProps) => {
                       variants={cardVariants}
                       transition={{ duration: 0.3, ease: "easeIn" }}
                     >
-                      <Image
-                        src={card.image}
-                        alt={card.title}
-                        width={128}
-                        height={128}
-                        draggable="false"
-                        className="w-16 h-16 rounded-lg object-cover"
-                      />
+                      <picture>
+                        <img
+                          src={card.image}
+                          alt={card.title}
+                          loading="lazy"
+                          draggable="false"
+                          className="w-16 h-16 rounded-lg object-cover"
+                        />
+                      </picture>
                       <div className="flex-1">
                         <h3 className="text-xl font-sans text-hover dark:text-white font-semibold">
                           {card.title}

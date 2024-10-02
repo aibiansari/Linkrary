@@ -4,7 +4,6 @@ import { useFavoriteCardsContext } from "@/contexts/useFavoriteCardsContext";
 import { useEffect, useRef, useState } from "react";
 import { toast } from "sonner";
 import { cards } from "@/data/Cards";
-import Image from "next/image";
 
 interface CardsProps {
   collection: boolean;
@@ -147,14 +146,15 @@ const Cards = ({ collection }: CardsProps) => {
         group-hover:-translate-y-1 hover:shadow-lg dark:hover:shadow-black/40 hover:shadow-black/20 shadow-black/30 
         dark:shadow-black/50 transition-all duration-300`}
             >
-              <Image
-                src={card.image}
-                alt={card.title}
-                width={128}
-                height={218}
-                draggable="false"
-                className="w-16 h-16 rounded-lg object-cover"
-              />
+              <picture>
+                <img
+                  src={card.image}
+                  alt={card.title}
+                  loading="lazy"
+                  draggable="false"
+                  className="w-16 h-16 rounded-lg object-cover"
+                />
+              </picture>
               <div className="overflow-hidden -translate-y-0.5">
                 <h1 className="text-xl text-hover dark:text-white font-semibold transition-colors duration-500">
                   {card.title}

@@ -112,6 +112,7 @@ const About: React.FC = () => {
             <img
               src="./aibi.webp"
               alt="Abdullah Ansari"
+              loading="lazy"
               className="w-32 h-32 rounded-full shadow-black/50 shadow-lg"
             />
           </picture>

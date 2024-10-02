@@ -4,11 +4,11 @@ Linkrary is the ultimate resource hub, bringing together a curated selection of 
 
 ## Tech Stack
 
-<img src="https://skillicons.dev/icons?i=react,tailwind,html,css,vite,vscode,git,javascript,typescript,github,ai,ps" />
+<img src="https://skillicons.dev/icons?i=react,tailwind,html,css,next,vscode,git,javascript,typescript,github,ai,ps" />
 
 ## Libraries and Frameworks
 
-- **Vite**: A build tool that provides a faster and leaner development experience for modern web projects.
+- **Next,js**: A React framework to streamlines the development of Linkrary.
 - **Framer Motion**: A powerful library for animations in React, allowing you to create smooth, fluid interactions.
 - **Sonner**: A toast notification library to handle info toasts and loading states.
 - **EmailJS**: A service used for getting feedbacks and suggestions via email.

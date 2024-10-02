@@ -1,6 +1,6 @@
 export const cards = [
   {
-    image: "/icons/KwikT.webp",
+    image: "./icons/KwikT.webp",
     title: "KwikTweaks",
     description: "A suite of Audio & PDF editing, and digital signature tools.",
     link: "https://ikamranshahzad.github.io/kwiktweaks-multipurpose-app",
@@ -15,7 +15,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Schnell.webp",
+    image: "./icons/Schnell.webp",
     title: "Schnell",
     description:
       "Fast and intuitive image generator powered by FLUX.1's Schnell model",
@@ -31,7 +31,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/FMHY.webp",
+    image: "./icons/FMHY.webp",
     title: "FMHY",
     description: "A huge list of free software and torrent resources.",
     link: "https://fmhy.net",
@@ -46,7 +46,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Toolur.webp",
+    image: "./icons/Toolur.webp",
     title: "Toolur",
     description:
       "Free online audio, video and document tools for developers and designers.",
@@ -69,7 +69,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Apps123.webp",
+    image: "./icons/Apps123.webp",
     title: "123Apps",
     description:
       "Online multimedia tools including video, audio, and PDF editors.",
@@ -89,7 +89,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/ChatGPT.webp",
+    image: "./icons/ChatGPT.webp",
     title: "ChatGPT",
     description: "The best AI-powered chatbot by OpenAI.",
     link: "https://chatgpt.com",
@@ -103,7 +103,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Pi.webp",
+    image: "./icons/Pi.webp",
     title: "Pi AI",
     description:
       "Emotional AI chatbot for fun, engaging, and helpful conversations.",
@@ -112,7 +112,7 @@ export const cards = [
     tags: ["voice interaction", "personal assistant", "fun chat"],
   },
   {
-    image: "/icons/TinyWow.webp",
+    image: "./icons/TinyWow.webp",
     title: "TinyWow",
     description: "Free tools to solve common file problems.",
     link: "https://tinywow.com",
@@ -127,7 +127,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Codeium.webp",
+    image: "./icons/Codeium.webp",
     title: "Codeium",
     description: "Free AI-powered code autocomplete tool.",
     link: "https://codeium.com",
@@ -141,7 +141,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Canva.webp",
+    image: "./icons/Canva.webp",
     title: "Canva",
     description: "Online all-in-one graphic design and editing tool.",
     link: "https://www.canva.com",
@@ -155,7 +155,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/CapCut.webp",
+    image: "./icons/CapCut.webp",
     title: "CapCut",
     description: "Video and image editor on the browser.",
     link: "https://www.capcut.com",
@@ -169,7 +169,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Descript.webp",
+    image: "./icons/Descript.webp",
     title: "Descript",
     description: "Audio and video editing made easy, powered by AI.",
     link: "https://www.descript.com",
@@ -183,7 +183,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Soundraw.webp",
+    image: "./icons/Soundraw.webp",
     title: "Soundraw",
     description:
       "An AI-based music generator that allows users to create royalty-free music.",
@@ -197,7 +197,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/AudioMass.webp",
+    image: "./icons/AudioMass.webp",
     title: "AudioMass",
     description:
       "A free, open-source online audio editor to edit and manipulate sound files.",
@@ -211,7 +211,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/VoiceMaker.webp",
+    image: "./icons/VoiceMaker.webp",
     title: "VoiceMaker",
     description:
       "An online text-to-speech converter to create natural-sounding voices.",
@@ -225,7 +225,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/VoiceChanger.webp",
+    image: "./icons/VoiceChanger.webp",
     title: "VoiceChanger",
     description:
       "Free online tool to change voice in various fun and creative ways.",
@@ -239,7 +239,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/OnlineToneGenerator.webp",
+    image: "./icons/OnlineToneGenerator.webp",
     title: "Tone Generator",
     description: "A tool for generating pure tones of specific frequencies.",
     link: "https://onlinetonegenerator.com",
@@ -252,7 +252,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Ringer.webp",
+    image: "./icons/Ringer.webp",
     title: "Ringer",
     description:
       "A free ringtone maker that allows users to create ringtones from audio files online.",
@@ -266,7 +266,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Zedge.webp",
+    image: "./icons/Zedge.webp",
     title: "Zedge",
     description:
       "A platform offering free wallpapers, ringtones, and other content.",
@@ -275,7 +275,7 @@ export const cards = [
     tags: ["wallpapers", "ringtones", "mobile customization", "free content"],
   },
   {
-    image: "/icons/ResponsiveVoice.webp",
+    image: "./icons/ResponsiveVoice.webp",
     title: "ResponsiveVoice",
     description:
       "A powerful text-to-speech tool that offers high-quality voice synthesis.",
@@ -290,7 +290,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/ElevenLabs.webp",
+    image: "./icons/ElevenLabs.webp",
     title: "ElevenLabs",
     description: "AI-powered Text to Speech and AI dubbing.",
     link: "https://elevenlabs.io",
@@ -304,7 +304,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Unsplash.webp",
+    image: "./icons/Unsplash.webp",
     title: "Unsplash",
     description: "Free high-resolution images for everyone.",
     link: "https://unsplash.com",
@@ -318,7 +318,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/OpenArt.webp",
+    image: "./icons/OpenArt.webp",
     title: "OpenArt",
     description: "Create and Manipulate AI-generated art.",
     link: "https://openart.ai",
@@ -332,7 +332,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/NexusMods.webp",
+    image: "./icons/NexusMods.webp",
     title: "Nexus Mods",
     description: "Mods and community for game modding.",
     link: "https://www.nexusmods.com",
@@ -346,7 +346,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/SaveWeb2Zip.webp",
+    image: "./icons/SaveWeb2Zip.webp",
     title: "SaveWeb2Zip",
     description: "Save entire websites as ZIP files for free.",
     link: "https://saveweb2zip.com",
@@ -359,7 +359,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/SadeemPC.webp",
+    image: "./icons/SadeemPC.webp",
     title: "SadeemPC",
     description: "Cracked software for Windows and Mac.",
     link: "https://www.sadeempc.com",
@@ -373,7 +373,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/GetIntoPC.webp",
+    image: "./icons/GetIntoPC.webp",
     title: "GetIntoPC",
     description: "Download free PC softwares and apps.",
     link: "https://getintopc.com",
@@ -381,7 +381,7 @@ export const cards = [
     tags: ["pc software", "apps", "cracked software", "free downloads"],
   },
   {
-    image: "/icons/FTUApps.webp",
+    image: "./icons/FTUApps.webp",
     title: "FTUApps",
     description: "Free tutorials and software downloads.",
     link: "https://ftuapps.io",
@@ -395,7 +395,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/CrackedIO.webp",
+    image: "./icons/CrackedIO.webp",
     title: "Cracked.io",
     description: "Community for sharing cracked software and tools.",
     link: "https://cracked.io",
@@ -403,7 +403,7 @@ export const cards = [
     tags: ["cracked software", "community", "tools", "cracking", "forums"],
   },
   {
-    image: "/icons/NulledTo.webp",
+    image: "./icons/NulledTo.webp",
     title: "Nulled.to",
     description: "Forum for nulled software and resources.",
     link: "https://www.nulled.to",
@@ -416,7 +416,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Veed.webp",
+    image: "./icons/Veed.webp",
     title: "Veed.io",
     description:
       "Online video editor with tools for creating, editing, and enhancing videos.",
@@ -430,7 +430,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Y2Mate.webp",
+    image: "./icons/Y2Mate.webp",
     title: "Y2Mate",
     description:
       "Popular tool for downloading videos and audio from YouTube and other platforms.",
@@ -449,7 +449,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/VideoSmaller.webp",
+    image: "./icons/VideoSmaller.webp",
     title: "VideoSmaller",
     description:
       "Online service to reduce video file size without losing quality.",
@@ -463,7 +463,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/VideoLouder.webp",
+    image: "./icons/VideoLouder.webp",
     title: "VideoLouder",
     description:
       "A free tool to increase the audio volume in video files online.",
@@ -477,7 +477,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Unscreen.webp",
+    image: "./icons/Unscreen.webp",
     title: "Unscreen",
     description:
       "A tool to automatically remove the background from videos and GIFs.",
@@ -491,7 +491,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Ezgif.webp",
+    image: "./icons/Ezgif.webp",
     title: "Ezgif",
     description: "Fimple online GIF creator and image editor.",
     link: "https://ezgif.com",
@@ -504,7 +504,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Clideo.webp",
+    image: "./icons/Clideo.webp",
     title: "Clideo",
     description:
       "An online tool for creating, editing, compressing & merging videos.",
@@ -518,7 +518,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/WaveVideo.webp",
+    image: "./icons/WaveVideo.webp",
     title: "Wave.video",
     description:
       "Video creation platform for making, editing, and hosting videos.",
@@ -532,7 +532,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/VideoUtils.webp",
+    image: "./icons/VideoUtils.webp",
     title: "VideoUtils",
     description:
       "Free online video editing tools such as trimming, merging, and converting videos.",
@@ -546,7 +546,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/AnyConv.webp",
+    image: "./icons/AnyConv.webp",
     title: "AnyConv",
     description: "A free file converter supporting various formats.",
     link: "https://anyconv.com",
@@ -559,7 +559,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/BetterConverter.webp",
+    image: "./icons/BetterConverter.webp",
     title: "Better Converter",
     description: "Online tool for converting audio, video, and images.",
     link: "https://better-converter.com",
@@ -572,7 +572,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/YTS.webp",
+    image: "./icons/YTS.webp",
     title: "YTS",
     description: "Download YIFY movies torrents directly.",
     link: "https://yts.mx",
@@ -586,7 +586,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/X1337.webp",
+    image: "./icons/X1337.webp",
     title: "1337x",
     description: "A popular torrent site for movies, TV shows, and more.",
     link: "https://www.1337x.to",
@@ -600,7 +600,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/TorrentGalaxy.webp",
+    image: "./icons/TorrentGalaxy.webp",
     title: "TorrentGalaxy",
     description: "Torrent site for movies, TV shows, games, and software.",
     link: "https://torrentgalaxy.to",
@@ -608,7 +608,7 @@ export const cards = [
     tags: ["torrent downloads", "movies", "games", "software", "tv shows"],
   },
   {
-    image: "/icons/PirateBay.webp",
+    image: "./icons/PirateBay.webp",
     title: "The Pirate Bay",
     description: "The world's most resilient BitTorrent website.",
     link: "https://thepiratebay.org",
@@ -623,7 +623,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Archive.webp",
+    image: "./icons/Archive.webp",
     title: "Archive.org",
     description: "A digital library of internet sites and cultural artifacts.",
     link: "https://archive.org",
@@ -637,7 +637,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Seedr.webp",
+    image: "./icons/Seedr.webp",
     title: "Seedr",
     description: "Cloud-based torrent downloading and streaming service.",
     link: "https://www.seedr.cc",
@@ -650,7 +650,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/GPT4O.webp",
+    image: "./icons/GPT4O.webp",
     title: "GPT4O",
     description: "AI tool (GPT4o) for text generation and tasks.",
     link: "https://gpt4o.so",
@@ -665,7 +665,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/LlamaCoder.webp",
+    image: "./icons/LlamaCoder.webp",
     title: "LlamaCoder",
     description: "AI coding assistant for developers.",
     link: "https://llamacoder.together.ai",
@@ -679,7 +679,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/PerplexityAI.webp",
+    image: "./icons/PerplexityAI.webp",
     title: "Perplexity AI",
     description: "AI-powered search engine for answering questions.",
     link: "https://www.perplexity.ai",
@@ -693,7 +693,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/AdobeEnhance.webp",
+    image: "./icons/AdobeEnhance.webp",
     title: "Adobe Enhance",
     description: "Enhance audio quality for podcasts using AI.",
     link: "https://podcast.adobe.com/enhance",
@@ -707,7 +707,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/LetsEnhance.webp",
+    image: "./icons/LetsEnhance.webp",
     title: "Let's Enhance",
     description: "AI-powered image enhancement and upscaling tool.",
     link: "https://letsenhance.io",
@@ -721,7 +721,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Waifu2x.webp",
+    image: "./icons/Waifu2x.webp",
     title: "Waifu2x",
     description: "AI-powered image upscaling and noise reduction.",
     link: "https://waifu2x.booru.pics",
@@ -735,7 +735,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/WaifuXL.webp",
+    image: "./icons/WaifuXL.webp",
     title: "WaifuXL",
     description: "Advanced AI tool for image upscaling.",
     link: "https://waifuxl.com",
@@ -749,7 +749,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/VocalRemover.webp",
+    image: "./icons/VocalRemover.webp",
     title: "Vocal Remover",
     description: "AI-powered tool for removing vocals from audio tracks.",
     link: "https://vocalremover.org",
@@ -763,7 +763,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Typeform.webp",
+    image: "./icons/Typeform.webp",
     title: "Typeform",
     description: "Create interactive forms, surveys, and quizzes.",
     link: "https://www.typeform.com",
@@ -777,7 +777,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/JustDeleteMe.webp",
+    image: "./icons/JustDeleteMe.webp",
     title: "JustDeleteMe",
     description:
       "A directory of direct links to delete accounts from web services.",
@@ -792,7 +792,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/CloudConvert.webp",
+    image: "./icons/CloudConvert.webp",
     title: "CloudConvert",
     description: "Online file converter supporting over 200 formats.",
     link: "https://cloudconvert.com",
@@ -806,7 +806,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Convertio.webp",
+    image: "./icons/Convertio.webp",
     title: "Convertio",
     description: "Easy-to-use online file converter for multiple formats.",
     link: "https://convertio.co",
@@ -820,7 +820,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/OnlineConvert.webp",
+    image: "./icons/OnlineConvert.webp",
     title: "Online Convert",
     description: "Free online file converter for documents, images, and more.",
     link: "https://www.online-convert.com",
@@ -834,7 +834,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/AudioAlter.webp",
+    image: "./icons/AudioAlter.webp",
     title: "AudioAlter",
     description:
       "Audio editing tools including equalizer, pitch, and speed changer.",
@@ -849,7 +849,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Suno.webp",
+    image: "./icons/Suno.webp",
     title: "Suno",
     description: "AI-powered platform for audio creation and manipulation.",
     link: "https://suno.com",
@@ -857,7 +857,7 @@ export const cards = [
     tags: ["AI", "audio creation", "manipulation", "editing", "sound design"],
   },
   {
-    image: "/icons/ShotsSO.webp",
+    image: "./icons/ShotsSO.webp",
     title: "Shots",
     description: "Instant screen recording and sharing tool.",
     link: "https://shots.so",
@@ -871,7 +871,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/CSSGradient.webp",
+    image: "./icons/CSSGradient.webp",
     title: "CSS Gradient",
     description: "A simple tool for generating CSS gradients.",
     link: "https://cssgradient.io",
@@ -879,7 +879,7 @@ export const cards = [
     tags: ["CSS gradients", "gradient generator", "web design", "color tools"],
   },
   {
-    image: "/icons/JSONFormatter.webp",
+    image: "./icons/JSONFormatter.webp",
     title: "JSON Formatter",
     description: "An online tool to format and validate JSON data.",
     link: "https://jsonformatter.org",
@@ -892,7 +892,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Gitfluence.webp",
+    image: "./icons/Gitfluence.webp",
     title: "Gitfluence",
     description: "A platform to find the git command you need effortlessly.",
     link: "https://www.gitfluence.com",
@@ -906,7 +906,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Glitch.webp",
+    image: "./icons/Glitch.webp",
     title: "Glitch",
     description: "A collaborative platform for building web apps.",
     link: "https://glitch.com",
@@ -919,7 +919,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/PageSpeed.webp",
+    image: "./icons/PageSpeed.webp",
     title: "PageSpeed Insights",
     description:
       "Analyze the content of a web page and get suggestions to make it faster.",
@@ -933,7 +933,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/SVGBox.webp",
+    image: "./icons/SVGBox.webp",
     title: "SVG Box",
     description: "A resource for creating and customizing SVG icons.",
     link: "https://svgbox.net",
@@ -941,7 +941,7 @@ export const cards = [
     tags: ["SVG icons", "custom icons", "design assets", "icon library"],
   },
   {
-    image: "/icons/Reshot.webp",
+    image: "./icons/Reshot.webp",
     title: "Reshot",
     description: "A platform for finding and sharing free stock photos.",
     link: "https://www.reshot.com",
@@ -954,7 +954,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Blobmaker.webp",
+    image: "./icons/Blobmaker.webp",
     title: "Blobmaker",
     description: "An online tool for generating customizable blob shapes.",
     link: "https://www.blobmaker.app",
@@ -962,7 +962,7 @@ export const cards = [
     tags: ["blob generator", "custom shapes", "design resources", "SVG shapes"],
   },
   {
-    image: "/icons/Creatica.webp",
+    image: "./icons/Creatica.webp",
     title: "Creatica",
     description: "A platform that offers design resources & inspiration.",
     link: "https://creatica.app",
@@ -975,7 +975,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/HuggingF.webp",
+    image: "./icons/HuggingF.webp",
     title: "MusicGen",
     description: "AI-based music generation by Facebook on Hugging Face.",
     link: "https://huggingface.co/spaces/facebook/MusicGen",
@@ -989,7 +989,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/DirtyLineStudio.webp",
+    image: "./icons/DirtyLineStudio.webp",
     title: "Dirty Line Studio",
     description: "Free design assets and resources for creatives.",
     link: "https://dirtylinestudio.com/freebies/",
@@ -1003,7 +1003,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/AbstractFonts.webp",
+    image: "./icons/AbstractFonts.webp",
     title: "Abstract Fonts",
     description: "Collection of free fonts for personal and commercial use.",
     link: "https://www.abstractfonts.com",
@@ -1017,7 +1017,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/TextureLabs.webp",
+    image: "./icons/TextureLabs.webp",
     title: "Texture Labs",
     description: "Free textures, brushes, and design resources.",
     link: "https://texturelabs.org",
@@ -1031,7 +1031,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/UncutWTF.webp",
+    image: "./icons/UncutWTF.webp",
     title: "Uncut.wtf",
     description: "A free platform offering open-source fonts..",
     link: "https://uncut.wtf",
@@ -1044,7 +1044,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/FontShare.webp",
+    image: "./icons/FontShare.webp",
     title: "FontShare",
     description: "A free and open-source font service.",
     link: "https://fontshare.com",
@@ -1052,7 +1052,7 @@ export const cards = [
     tags: ["free fonts", "open-source fonts", "typography", "design fonts"],
   },
   {
-    image: "/icons/DaFont.webp",
+    image: "./icons/DaFont.webp",
     title: "DaFont",
     description: "A massive collection of free fonts.",
     link: "https://www.dafont.com",
@@ -1060,7 +1060,7 @@ export const cards = [
     tags: ["free fonts", "font download", "typography", "font library"],
   },
   {
-    image: "/icons/WhatFontIs.webp",
+    image: "./icons/WhatFontIs.webp",
     title: "WhatFontIs",
     description: "An online tool that helps identify fonts from images.",
     link: "https://www.whatfontis.com",
@@ -1073,7 +1073,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/TypIO.webp",
+    image: "./icons/TypIO.webp",
     title: "Typ.io",
     description:
       "A platform that showcases beautiful font pairings used in real projects.",
@@ -1087,7 +1087,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/FontPair.webp",
+    image: "./icons/FontPair.webp",
     title: "FontPair",
     description: "A curated library of Google font pairings.",
     link: "https://www.fontpair.co",
@@ -1095,7 +1095,7 @@ export const cards = [
     tags: ["font pairings", "Google fonts", "typography", "design resources"],
   },
   {
-    image: "/icons/PaFolios.webp",
+    image: "./icons/PaFolios.webp",
     title: "PaFolios",
     description: "A platform to create and showcase beautiful portfolios.",
     link: "https://pafolios.com",
@@ -1108,7 +1108,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/PrettyFolio.webp",
+    image: "./icons/PrettyFolio.webp",
     title: "PrettyFolio",
     description: "An inspiration site featuring a collection of portfolios.",
     link: "https://prettyfolio.com",
@@ -1121,7 +1121,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Blush.webp",
+    image: "./icons/Blush.webp",
     title: "Blush",
     description:
       "A design tool that allows users to create and customize illustrations.",
@@ -1135,7 +1135,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Flaticon.webp",
+    image: "./icons/Flaticon.webp",
     title: "Flaticon",
     description: "A vast library of free icons in SVG & PNG.",
     link: "https://www.flaticon.com",
@@ -1143,7 +1143,7 @@ export const cards = [
     tags: ["icon library", "free icons", "SVG icons", "vector icons"],
   },
   {
-    image: "/icons/FaviconIO.webp",
+    image: "./icons/FaviconIO.webp",
     title: "Favicon.io",
     description:
       "A free tool for generating favicons from text, images, or emojis.",
@@ -1157,7 +1157,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Adobe.webp",
+    image: "./icons/Adobe.webp",
     title: "Adobe BG Remover",
     description: "A powerful tool to remove backgrounds from images.",
     link: "https://www.adobe.com/express/feature/image/remove-background",
@@ -1170,7 +1170,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/SVGOMG.webp",
+    image: "./icons/SVGOMG.webp",
     title: "SVGOMG",
     description: "An online tool to optimize and compress SVG files.",
     link: "https://jakearchibald.github.io/svgomg/",
@@ -1183,7 +1183,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/ColorHunt.webp",
+    image: "./icons/ColorHunt.webp",
     title: "ColorHunt",
     description: "A collection of beautiful, curated color palettes.",
     link: "https://colorhunt.co",
@@ -1196,7 +1196,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Squoosh.webp",
+    image: "./icons/Squoosh.webp",
     title: "Squoosh",
     description:
       "An open-source tool for compressing and optimizing images for the web.",
@@ -1210,7 +1210,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/CoolBackgrounds.webp",
+    image: "./icons/CoolBackgrounds.webp",
     title: "CoolBackgrounds",
     description: "A collection of unique and customizable backgrounds.",
     link: "https://coolbackgrounds.io",
@@ -1223,7 +1223,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/HeroPatterns.webp",
+    image: "./icons/HeroPatterns.webp",
     title: "HeroPatterns",
     description: "A collection of repeatable SVG background patterns.",
     link: "https://heropatterns.com",
@@ -1236,7 +1236,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Picrew.webp",
+    image: "./icons/Picrew.webp",
     title: "Picrew",
     description:
       "A popular avatar maker to create and customize your own character illustrations.",
@@ -1250,7 +1250,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Hama.webp",
+    image: "./icons/Hama.webp",
     title: "Hama",
     description: "A tool to remove unwanted objects from photos.",
     link: "https://www.hama.app",
@@ -1263,7 +1263,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/ObjectRemover.webp",
+    image: "./icons/ObjectRemover.webp",
     title: "ObjectRemover",
     description:
       "An online tool to remove unwanted objects from images easily.",
@@ -1272,7 +1272,7 @@ export const cards = [
     tags: ["object removal", "photo editing", "image editing", "design tools"],
   },
   {
-    image: "/icons/PFPs.webp",
+    image: "./icons/PFPs.webp",
     title: "PFPs.gg",
     description: "A collection of profile pictures for gamers and creatives.",
     link: "https://pfps.gg",
@@ -1285,7 +1285,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Thingiverse.webp",
+    image: "./icons/Thingiverse.webp",
     title: "Thingiverse",
     description: "A platform for sharing 3D printable designs and models.",
     link: "https://www.thingiverse.com",
@@ -1298,7 +1298,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/TinEye.webp",
+    image: "./icons/TinEye.webp",
     title: "TinEye",
     description: "A reverse image search engine to find source of images.",
     link: "https://tineye.com",
@@ -1311,7 +1311,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/SauceNAO.webp",
+    image: "./icons/SauceNAO.webp",
     title: "SauceNAO",
     description:
       "An image search engine designed to find source of anime & manga",
@@ -1325,7 +1325,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/ImgOps.webp",
+    image: "./icons/ImgOps.webp",
     title: "ImgOps",
     description:
       "An online image processing tool that offers a variety of services.",
@@ -1339,7 +1339,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Muzli.webp",
+    image: "./icons/Muzli.webp",
     title: "Muzli",
     description:
       "A design inspiration search engine that curates the latest trends.",
@@ -1353,7 +1353,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/DeepAI.webp",
+    image: "./icons/DeepAI.webp",
     title: "DeepAI",
     description: "An AI platform that offers various tools and APIs.",
     link: "https://deepai.org",
@@ -1366,7 +1366,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/SketchValley.webp",
+    image: "./icons/SketchValley.webp",
     title: "Sketch Valley",
     description: "Free vector and illustration resources for designers.",
     link: "https://sketchvalley.com",
@@ -1380,7 +1380,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/JitterVideo.webp",
+    image: "./icons/JitterVideo.webp",
     title: "Jitter Video",
     description: "Create motion designs and animations easily.",
     link: "https://jitter.video",
@@ -1394,7 +1394,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/StorySet.webp",
+    image: "./icons/StorySet.webp",
     title: "StorySet",
     description: "Free customizable illustrations for your projects.",
     link: "https://storyset.com",
@@ -1408,7 +1408,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Paletton.webp",
+    image: "./icons/Paletton.webp",
     title: "Paletton",
     description: "Color scheme designer for creating perfect color palettes.",
     link: "https://paletton.com",
@@ -1422,7 +1422,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/ResourceBoy.webp",
+    image: "./icons/ResourceBoy.webp",
     title: "ResourceBoy",
     description: "Free design resources including mockups, fonts, and more.",
     link: "https://resourceboy.com",
@@ -1436,7 +1436,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Pexels.webp",
+    image: "./icons/Pexels.webp",
     title: "Pexels",
     description:
       "Free stock photos and videos for personal and commercial use.",
@@ -1451,7 +1451,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Coolors.webp",
+    image: "./icons/Coolors.webp",
     title: "Coolors",
     description: "Color palette generator for designers and artists.",
     link: "https://coolors.co",
@@ -1465,7 +1465,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/TheNounProject.webp",
+    image: "./icons/TheNounProject.webp",
     title: "The Noun Project",
     description: "Free and paid icons for every project.",
     link: "https://thenounproject.com",
@@ -1479,7 +1479,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/MeshGradients.webp",
+    image: "./icons/MeshGradients.webp",
     title: "Mesh Gradients",
     description: "Beautiful mesh gradient backgrounds for your designs.",
     link: "https://products.ls.graphics/mesh-gradients/",
@@ -1493,7 +1493,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/ShaderGradient.webp",
+    image: "./icons/ShaderGradient.webp",
     title: "Shader Gradient",
     description: "Advanced shader gradients for web design.",
     link: "https://www.shadergradient.co",
@@ -1507,7 +1507,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/WhatTheFont.webp",
+    image: "./icons/WhatTheFont.webp",
     title: "WhatTheFont",
     description: "Identify fonts from any image instantly.",
     link: "https://www.myfonts.com/pages/whatthefont",
@@ -1521,7 +1521,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/PixCap.webp",
+    image: "./icons/PixCap.webp",
     title: "PixCap",
     description: "3D animation and design platform for the web.",
     link: "https://pixcap.com",
@@ -1535,7 +1535,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Spline.webp",
+    image: "./icons/Spline.webp",
     title: "Spline",
     description: "Design and collaborate on 3D models and scenes.",
     link: "https://app.spline.design",
@@ -1549,7 +1549,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Looka.webp",
+    image: "./icons/Looka.webp",
     title: "Looka",
     description: "AI-powered logo design and branding platform.",
     link: "https://looka.com",
@@ -1563,7 +1563,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/SearchAnything.webp",
+    image: "./icons/SearchAnything.webp",
     title: "Search Anything",
     description: "A tool to search for anything across multiple websites.",
     link: "https://search.anything.io",
@@ -1577,7 +1577,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/FlairAI.webp",
+    image: "./icons/FlairAI.webp",
     title: "Flair AI",
     description:
       "AI-powered design tool for creating high-quality marketing visuals.",
@@ -1592,7 +1592,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/PixverseAI.webp",
+    image: "./icons/PixverseAI.webp",
     title: "Pixverse AI",
     description: "AI image generation and editing platform.",
     link: "https://pixverse.ai",
@@ -1606,7 +1606,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/KreaAI.webp",
+    image: "./icons/KreaAI.webp",
     title: "Krea AI",
     description: "AI-powered art generator with customizable options.",
     link: "https://www.krea.ai",
@@ -1620,7 +1620,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/PicFinderAI.webp",
+    image: "./icons/PicFinderAI.webp",
     title: "PicFinder AI",
     description: "AI-powered tool for finding and generating images.",
     link: "https://picfinder.ai",
@@ -1634,7 +1634,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/DzineAI.webp",
+    image: "./icons/DzineAI.webp",
     title: "Dzine AI",
     description:
       "AI-driven platform for designing websites and web components.",
@@ -1649,7 +1649,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Dezgo.webp",
+    image: "./icons/Dezgo.webp",
     title: "Dezgo",
     description: "AI art generator with text-to-image capabilities.",
     link: "https://dezgo.com",
@@ -1663,7 +1663,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/MageSpace.webp",
+    image: "./icons/MageSpace.webp",
     title: "Mage Space",
     description: "AI-powered platform for generating art and images.",
     link: "https://www.mage.space",
@@ -1677,7 +1677,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/LogoDiffusion.webp",
+    image: "./icons/LogoDiffusion.webp",
     title: "Logo Diffusion",
     description: "AI logo creation tool with customization options.",
     link: "https://www.logodiffusion.com",
@@ -1691,7 +1691,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Pikimov.webp",
+    image: "./icons/Pikimov.webp",
     title: "Pikimov",
     description: "AI-driven tool for generating video and animations.",
     link: "https://pikimov.com",
@@ -1706,7 +1706,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/HuggingF.webp",
+    image: "./icons/HuggingF.webp",
     title: "FLUX.1 Schnell",
     description: "Free AI image generation tool with many options.",
     link: "https://huggingface.co/spaces/black-forest-labs/FLUX.1-schnell",
@@ -1721,7 +1721,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/ScenePkg.webp",
+    image: "./icons/ScenePkg.webp",
     title: "WE Scene Unpacker",
     description: "Website to unpack wallpaper engine's scenes for free.",
     link: "https://wetranslate.thiscould.work/scene.pkg/",
@@ -1735,7 +1735,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/CareerFlow.webp",
+    image: "./icons/CareerFlow.webp",
     title: "CareerFlow",
     description: "AI-driven career guidance and job search platform.",
     link: "https://www.careerflow.ai",
@@ -1750,7 +1750,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Hacksplaining.webp",
+    image: "./icons/Hacksplaining.webp",
     title: "Hacksplaining",
     description: "Learn cybersecurity through interactive tutorials.",
     link: "https://www.hacksplaining.com",
@@ -1764,7 +1764,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/VerifTools.webp",
+    image: "./icons/VerifTools.webp",
     title: "Verif Tools",
     description: "Free online verification tools for various use cases.",
     link: "https://veriftools.net",
@@ -1778,7 +1778,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/FakeNameGenerator.webp",
+    image: "./icons/FakeNameGenerator.webp",
     title: "Fake Name Gen",
     description: "Generate random names and identities for testing purposes.",
     link: "https://www.fakenamegenerator.com",
@@ -1792,7 +1792,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/OSINTFramework.webp",
+    image: "./icons/OSINTFramework.webp",
     title: "OSINT Framework",
     description: "A collection of tools for open-source intelligence (OSINT).",
     link: "https://osintframework.com",
@@ -1806,7 +1806,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Github.webp",
+    image: "./icons/Github.webp",
     title: "SundownDev Gist",
     description: "A huge list of Google dorks.",
     link: "https://gist.github.com/sundowndev/283efaddbcf896ab405488330d1bbc06",
@@ -1820,7 +1820,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/FreeOpenVPN.webp",
+    image: "./icons/FreeOpenVPN.webp",
     title: "FreeOpenVPN",
     description: "Free VPN service with multiple server locations.",
     link: "https://www.freeopenvpn.org",
@@ -1834,7 +1834,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/PrePostSEO.webp",
+    image: "./icons/PrePostSEO.webp",
     title: "PrePostSEO",
     description: "A collection of SEO tools to optimize your website.",
     link: "https://www.prepostseo.com",
@@ -1848,7 +1848,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/PDF2Go.webp",
+    image: "./icons/PDF2Go.webp",
     title: "PDF2Go",
     description: "Online PDF converter for various file formats.",
     link: "https://www.pdf2go.com",
@@ -1862,7 +1862,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/ILovePDF.webp",
+    image: "./icons/ILovePDF.webp",
     title: "ILovePDF",
     description: "Comprehensive tool to edit and convert PDF files.",
     link: "https://www.ilovepdf.com",
@@ -1876,7 +1876,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Hyperbeam.webp",
+    image: "./icons/Hyperbeam.webp",
     title: "Hyperbeam",
     description: "Co-browsing tool for watching and browsing together.",
     link: "https://hyperbeam.com",
@@ -1890,7 +1890,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/OpenTogetherTube.webp",
+    image: "./icons/OpenTogetherTube.webp",
     title: "Open Together Tube",
     description: "Watch videos together with synchronized playback.",
     link: "https://opentogethertube.com",
@@ -1904,7 +1904,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Kosmi.webp",
+    image: "./icons/Kosmi.webp",
     title: "Kosmi",
     description: "Virtual rooms for social hangouts, games, and watch parties.",
     link: "https://kosmi.io",
@@ -1918,7 +1918,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/FreeMoviesWatch.webp",
+    image: "./icons/FreeMoviesWatch.webp",
     title: "Free Movies Watch",
     description: "Stream and watch movies for free online.",
     link: "https://freemovieswatch.cc",
@@ -1932,7 +1932,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/SFlix.webp",
+    image: "./icons/SFlix.webp",
     title: "SFlix",
     description: "Watch movies & TV shows online for free.",
     link: "https://sflix.to",
@@ -1946,7 +1946,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/HDToday.webp",
+    image: "./icons/HDToday.webp",
     title: "HD Today",
     description: "Stream high-definition movies and TV shows for free.",
     link: "https://hdtoday.cc",
@@ -1954,7 +1954,7 @@ export const cards = [
     tags: ["HD movies", "streaming", "TV shows", "HDToday", "free content"],
   },
   {
-    image: "/icons/HydraHD.webp",
+    image: "./icons/HydraHD.webp",
     title: "Hydra HD",
     description: "Watch HD movies and TV shows online.",
     link: "https://hydrahd.com",
@@ -1962,7 +1962,7 @@ export const cards = [
     tags: ["HD streaming", "movies", "TV shows", "HydraHD", "watch online"],
   },
   {
-    image: "/icons/Movies2Watch.webp",
+    image: "./icons/Movies2Watch.webp",
     title: "Movies 2 Watch",
     description: "Platform for watching free movies online.",
     link: "https://movies2watch.tv",
@@ -1976,7 +1976,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/YesMovies.webp",
+    image: "./icons/YesMovies.webp",
     title: "YesMovies",
     description: "Stream and watch movies for free online.",
     link: "https://ww.yesmovies.ag",
@@ -1990,7 +1990,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/ShowboxMovies.webp",
+    image: "./icons/ShowboxMovies.webp",
     title: "Showbox Movies",
     description: "Watch movies and TV shows online for free.",
     link: "https://www.showboxmovies.net",
@@ -1998,7 +1998,7 @@ export const cards = [
     tags: ["Showbox", "free movies", "TV shows", "streaming", "watch online"],
   },
   {
-    image: "/icons/AnimeTV9.webp",
+    image: "./icons/AnimeTV9.webp",
     title: "9Anime TV",
     description: "Stream anime and animated series online.",
     link: "https://9animetv.to",
@@ -2012,7 +2012,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/AnimeTsu.webp",
+    image: "./icons/AnimeTsu.webp",
     title: "AnimeTsu",
     description: "Watch and stream anime online.",
     link: "https://animetsu.cc",
@@ -2020,7 +2020,7 @@ export const cards = [
     tags: ["anime", "streaming", "AnimeTsu", "online series", "watch anime"],
   },
   {
-    image: "/icons/AnimePahe.webp",
+    image: "./icons/AnimePahe.webp",
     title: "AnimePahe",
     description: "Stream and download anime episodes.",
     link: "https://animepahe.ru",
@@ -2029,7 +2029,7 @@ export const cards = [
   },
 
   {
-    image: "/icons/OpenSubtitles.webp",
+    image: "./icons/OpenSubtitles.webp",
     title: "OpenSubtitles",
     description: "Find and download subtitles for movies and TV shows.",
     link: "https://www.opensubtitles.org",
@@ -2043,7 +2043,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/OnlineFix.webp",
+    image: "./icons/OnlineFix.webp",
     title: "OnlineFix",
     description:
       "A website providing games and help with launching games over the network.",
@@ -2057,7 +2057,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/SteamUnlocked.webp",
+    image: "./icons/SteamUnlocked.webp",
     title: "SteamUnlocked",
     description: "Download and unlock games from Steam for free.",
     link: "https://steamunlocked.net",
@@ -2071,7 +2071,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/SteamGG.webp",
+    image: "./icons/SteamGG.webp",
     title: "Steam GG",
     description: "Find and download games from Steam.",
     link: "https://steamgg.net",
@@ -2085,7 +2085,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/OceanOfGames.webp",
+    image: "./icons/OceanOfGames.webp",
     title: "Ocean of Games",
     description: "Download PC games for free from Ocean of Games.",
     link: "https://oceanofgames.com",
@@ -2099,7 +2099,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/ApunkaGames.webp",
+    image: "./icons/ApunkaGames.webp",
     title: "Apunka Games",
     description: "Free PC games download site with a wide variety.",
     link: "https://www.apunkagames.com",
@@ -2113,7 +2113,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/DLXBGame.webp",
+    image: "./icons/DLXBGame.webp",
     title: "DLXB Game",
     description: "Download the latest PC games and updates.",
     link: "https://dlxbgame.com",
@@ -2127,7 +2127,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/DLPSGame.webp",
+    image: "./icons/DLPSGame.webp",
     title: "DLPS Game",
     description: "Access and download PC games for free.",
     link: "https://dlpsgame.com/",
@@ -2141,7 +2141,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/W3SchoolsColors.webp",
+    image: "./icons/W3SchoolsColors.webp",
     title: "Color Picker",
     description: "Tool for picking and previewing colors for web design.",
     link: "https://www.w3schools.com/colors/colors_picker.asp",
@@ -2155,7 +2155,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/TailwindCSSColors.webp",
+    image: "./icons/TailwindCSSColors.webp",
     title: "Tailwind CSS Colors",
     description: "Documentation for customizing colors in Tailwind CSS.",
     link: "https://tailwindcss.com/docs/customizing-colors",
@@ -2169,7 +2169,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/MockAPI.webp",
+    image: "./icons/MockAPI.webp",
     title: "MockAPI",
     description: "Create mock APIs quickly for testing and development.",
     link: "https://mockapi.io",
@@ -2183,7 +2183,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Deblank.webp",
+    image: "./icons/Deblank.webp",
     title: "Deblank",
     description: "Generate design and development content with Deblank.",
     link: "https://deblank.com",
@@ -2197,7 +2197,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/CSSLoaders.webp",
+    image: "./icons/CSSLoaders.webp",
     title: "CSS Loaders",
     description: "Collection of CSS loaders for use in web projects.",
     link: "https://css-loaders.com",
@@ -2211,7 +2211,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/UIBall.webp",
+    image: "./icons/UIBall.webp",
     title: "UI Ball",
     description: "Collection of CSS loaders and animations.",
     link: "https://uiball.com/ldrs",
@@ -2225,7 +2225,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Devicon.webp",
+    image: "./icons/Devicon.webp",
     title: "Devicon",
     description: "Icon set for popular development tools and technologies.",
     link: "https://devicon.dev",
@@ -2239,7 +2239,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/SVGRepo.webp",
+    image: "./icons/SVGRepo.webp",
     title: "SVG Repo",
     description: "Find and download SVG icons and images.",
     link: "https://www.svgrepo.com",
@@ -2253,7 +2253,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/BootstrapIcons.webp",
+    image: "./icons/BootstrapIcons.webp",
     title: "Bootstrap Icons",
     description: "Open source SVG icons for Bootstrap and beyond.",
     link: "https://icons.getbootstrap.com",
@@ -2267,7 +2267,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Namify.webp",
+    image: "./icons/Namify.webp",
     title: "Namify",
     description: "Generate and find unique names for projects and businesses.",
     link: "https://namify.tech",
@@ -2281,7 +2281,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Rawpixel.webp",
+    image: "./icons/Rawpixel.webp",
     title: "Rawpixel",
     description: "High-quality stock images and design resources.",
     link: "https://www.rawpixel.com",
@@ -2295,7 +2295,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Freepik.webp",
+    image: "./icons/Freepik.webp",
     title: "Freepik",
     description: "A vast library of free vectors,PSDs, and more.",
     link: "https://www.freepik.com",
@@ -2308,7 +2308,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Pixabay.webp",
+    image: "./icons/Pixabay.webp",
     title: "Pixabay",
     description: "A platform offering a wide range of free images and videos.",
     link: "https://pixabay.com",
@@ -2321,7 +2321,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/StockSnap.webp",
+    image: "./icons/StockSnap.webp",
     title: "StockSnap",
     description:
       "A large selection of high-quality stock photos, all free to use.",
@@ -2335,7 +2335,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/KaboomPics.webp",
+    image: "./icons/KaboomPics.webp",
     title: "KaboomPics",
     description:
       "A free stock photo site with a collection of high-quality images.",
@@ -2349,7 +2349,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/LifeOfPix.webp",
+    image: "./icons/LifeOfPix.webp",
     title: "Life of Pix",
     description: "A source of free photos donated by an advertising agency.",
     link: "https://www.lifeofpix.com",
@@ -2362,7 +2362,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/FreeImages.webp",
+    image: "./icons/FreeImages.webp",
     title: "FreeImages",
     description: "A library of free stock photos, illustrations, and vectors.",
     link: "https://www.freeimages.com",
@@ -2375,7 +2375,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Pikwizard.webp",
+    image: "./icons/Pikwizard.webp",
     title: "Pikwizard",
     description:
       "A free stock photo site with a large library of images and videos.",
@@ -2389,7 +2389,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Polyhaven.webp",
+    image: "./icons/Polyhaven.webp",
     title: "Polyhaven",
     description:
       "A free resource for high-quality 3D assets, HDRIs, and textures.",
@@ -2398,7 +2398,7 @@ export const cards = [
     tags: ["3D assets", "HDRIs", "textures", "free resources"],
   },
   {
-    image: "/icons/StyledStock.webp",
+    image: "./icons/StyledStock.webp",
     title: "Styled Stock",
     description: "A collection of beautiful, styled stock photos.",
     link: "https://styledstock.co",
@@ -2411,7 +2411,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/StickPNG.webp",
+    image: "./icons/StickPNG.webp",
     title: "StickPNG",
     description: "Free transparent PNG images and clipart.",
     link: "https://www.stickpng.com",
@@ -2425,7 +2425,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/CleanPNG.webp",
+    image: "./icons/CleanPNG.webp",
     title: "CleanPNG",
     description: "Transparent PNG images for personal and commercial use.",
     link: "https://www.cleanpng.com",
@@ -2439,7 +2439,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/TinyPNG.webp",
+    image: "./icons/TinyPNG.webp",
     title: "TinyPNG",
     description: "Compress and optimize PNG images.",
     link: "https://tinypng.com",
@@ -2453,7 +2453,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Haikei.webp",
+    image: "./icons/Haikei.webp",
     title: "Haikei",
     description: "Generate customizable SVG shapes and backgrounds.",
     link: "https://app.haikei.app",
@@ -2467,7 +2467,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Github.webp",
+    image: "./icons/Github.webp",
     title: "Hover.css",
     description:
       "CSS3 powered hover effects for links, buttons, logos, SVG, featured images, and more.",
@@ -2482,7 +2482,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Readme.webp",
+    image: "./icons/Readme.webp",
     title: "Readme.so",
     description: "Create beautiful README files for your projects.",
     link: "https://readme.so/editor",
@@ -2496,7 +2496,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/GPRM.webp",
+    image: "./icons/GPRM.webp",
     title: "GPRM",
     description:
       "A simple web-based tool to generate and manage your personal README files.",
@@ -2511,7 +2511,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Exercism.webp",
+    image: "./icons/Exercism.webp",
     title: "Exercism",
     description: "Code practice and mentorship for programming languages.",
     link: "https://exercism.org",
@@ -2525,7 +2525,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/V0.webp",
+    image: "./icons/V0.webp",
     title: "V0.dev",
     description: "Web-based tools for developers and designers.",
     link: "https://v0.dev",
@@ -2539,7 +2539,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Webcode.webp",
+    image: "./icons/Webcode.webp",
     title: "Webcode Tools",
     description: "Tools for web development and design.",
     link: "https://webcode.tools",
@@ -2553,7 +2553,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Quickref.webp",
+    image: "./icons/Quickref.webp",
     title: "QuickRef",
     description: "Quick reference for coding languages and frameworks.",
     link: "https://quickref.me",
@@ -2567,7 +2567,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Appshots.webp",
+    image: "./icons/Appshots.webp",
     title: "Appshots",
     description: "Generate app screenshots with beautiful mockups.",
     link: "https://appshots.design",
@@ -2581,7 +2581,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Mobbin.webp",
+    image: "./icons/Mobbin.webp",
     title: "Mobbin",
     description: "Design inspiration from mobile app screenshots.",
     link: "https://mobbin.com",
@@ -2595,7 +2595,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Showreelz.webp",
+    image: "./icons/Showreelz.webp",
     title: "Showreelz",
     description:
       "Showreel templates and examples for designers and developers.",
@@ -2610,7 +2610,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/IamSajid.webp",
+    image: "./icons/IamSajid.webp",
     title: "I am Sajid",
     description: "Design and development resources by Sajid.",
     link: "https://www.iamsajid.com",
@@ -2624,7 +2624,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Flowbite.webp",
+    image: "./icons/Flowbite.webp",
     title: "Flowbite",
     description: "Tailwind CSS components and templates.",
     link: "https://flowbite.com",
@@ -2638,7 +2638,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Uiverse.webp",
+    image: "./icons/Uiverse.webp",
     title: "Uiverse",
     description: "Design system and components library.",
     link: "https://uiverse.io",
@@ -2652,7 +2652,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/MagicUI.webp",
+    image: "./icons/MagicUI.webp",
     title: "Magic UI",
     description: "Design system and UI components library.",
     link: "https://magicui.design",
@@ -2666,7 +2666,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/Shadcn.webp",
+    image: "./icons/Shadcn.webp",
     title: "Shadcn UI",
     description: "Component library for React.",
     link: "https://ui.shadcn.com",
@@ -2680,7 +2680,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/ReactSelect.webp",
+    image: "./icons/ReactSelect.webp",
     title: "React Select",
     description: "Flexible and customizable select menu for React.",
     link: "https://react-select.com",
@@ -2694,7 +2694,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/DaisyUI.webp",
+    image: "./icons/DaisyUI.webp",
     title: "DaisyUI",
     description: "Tailwind CSS components library.",
     link: "https://daisyui.com",
@@ -2708,7 +2708,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/HoverDev.webp",
+    image: "./icons/HoverDev.webp",
     title: "Hover.dev",
     description: "Web-based tools for design and development.",
     link: "https://www.hover.dev",
@@ -2722,7 +2722,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/HyperUI.webp",
+    image: "./icons/HyperUI.webp",
     title: "HyperUI",
     description: "Tailwind CSS components and templates.",
     link: "https://www.hyperui.dev",
@@ -2736,7 +2736,7 @@ export const cards = [
     ],
   },
   {
-    image: "/icons/AntDesign.webp",
+    image: "./icons/AntDesign.webp",
     title: "Ant Design",
     description: "A design system for enterprise-level products.",
     link: "https://ant.design",

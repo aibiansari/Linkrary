@@ -2,7 +2,6 @@ import { useFilterButtonContext } from "@/contexts/useFilterButtonContext";
 import { useCategoryContext } from "@/contexts/useCategoryContext";
 import Dropdown from "./dropdown";
 import Link from "next/link";
-import Image from "next/image";
 
 type PageProps = {
   page: "home" | "collection" | "about";
@@ -31,15 +30,15 @@ const Navbar = ({ page = "home" }: PageProps) => {
           href="/"
           className="flex items-center gap-2"
         >
-          <Image
-            src="/logo.svg"
-            alt="Linkrary Logo"
-            width={24}
-            height={24}
-            draggable={false}
-            className="w-6 h-6 invert dark:invert-0 transition-all duration-500"
-          />
-
+          <picture>
+            <img
+              src="/logo.svg"
+              alt="Linkrary Logo"
+              loading="lazy"
+              draggable={false}
+              className="w-6 h-6 invert dark:invert-0 transition-all duration-500"
+            />
+          </picture>
           <span className="hidden md:block text-2xl font-bold">Linkrary</span>
         </Link>
       </div>
