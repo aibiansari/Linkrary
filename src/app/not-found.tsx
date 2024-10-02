@@ -8,7 +8,7 @@ export default function NotFound() {
         <div className="mb-4">
           <picture>
             <img
-              src="/logo.svg"
+              src="./logo.svg"
               alt="Linkrary Logo"
               loading="lazy"
               className="w-24 h-24 invert dark:invert-0"

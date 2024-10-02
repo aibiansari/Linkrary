@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import { useCategoryContext } from "@/contexts/useCategoryContext";
 import { useFavoriteCardsContext } from "@/contexts/useFavoriteCardsContext";
@@ -146,15 +147,13 @@ const Cards = ({ collection }: CardsProps) => {
         group-hover:-translate-y-1 hover:shadow-lg dark:hover:shadow-black/40 hover:shadow-black/20 shadow-black/30 
         dark:shadow-black/50 transition-all duration-300`}
             >
-              <picture>
-                <img
-                  src={card.image}
-                  alt={card.title}
-                  loading="lazy"
-                  draggable="false"
-                  className="w-16 h-16 rounded-lg object-cover"
-                />
-              </picture>
+              <img
+                src={card.image}
+                alt={card.title}
+                loading="lazy"
+                draggable="false"
+                className="w-16 h-16 rounded-lg object-cover"
+              />
               <div className="overflow-hidden -translate-y-0.5">
                 <h1 className="text-xl text-hover dark:text-white font-semibold transition-colors duration-500">
                   {card.title}
