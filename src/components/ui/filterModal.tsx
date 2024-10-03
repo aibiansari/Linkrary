@@ -2,6 +2,7 @@ import { useFilterButtonContext } from "@/contexts/useFilterButtonContext";
 import { useFavoriteCardsContext } from "@/contexts/useFavoriteCardsContext";
 import { AnimatePresence, motion } from "framer-motion";
 import { cards } from "@/data/Cards";
+import { toast } from "sonner";
 import React from "react";
 
 interface FilterProps {
@@ -10,9 +11,38 @@ interface FilterProps {
 
 const FilterModal = ({ collection }: FilterProps) => {
   const { buttonState, setButtonState } = useFilterButtonContext();
-  const { favCards } = useFavoriteCardsContext();
+  const { favCards, setFavCards } = useFavoriteCardsContext();
   const [search, setSearch] = React.useState("");
   const inputRef = React.useRef<HTMLInputElement>(null);
+
+  const handleSaveToggle = (title: string) => {
+    const isFavorite = favCards.includes(title);
+    const delCard = title;
+    setFavCards((prevFavCards) => {
+      const updatedFavCards = isFavorite
+        ? prevFavCards.filter((fav) => fav !== title)
+        : [...prevFavCards, title];
+      return updatedFavCards;
+    }); // Update state and localStorage
+    if (isFavorite) {
+      toast.info(`${title} removed from collection`, {
+        action: {
+          label: "Undo",
+          onClick: () => {
+            setFavCards((prevFavCards) => {
+              if (!prevFavCards.includes(delCard)) {
+                const updatedFavCards = [...prevFavCards, delCard];
+                return updatedFavCards;
+              }
+              return prevFavCards;
+            });
+          },
+        },
+      });
+    } else {
+      toast.success(`${title} added to collection`);
+    }
+  };
 
   // Filter logic that matches tags intelligently
   const filteredCards =
@@ -143,40 +173,58 @@ const FilterModal = ({ collection }: FilterProps) => {
                   variants={listVariants}
                 >
                   {filteredCards.map((card, index) => (
-                    <motion.a
-                      key={index}
-                      href={card.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="relative bg-stone-100 dark:bg-element rounded-lg shadow-md p-4 flex items-center space-x-4 hover:bg-white dark:hover:bg-body hover:shadow-none hover:ring-1 ring-stone-300 dark:ring-element shadow-black/10 dark:shadow-black/40 transition-all duration-300 group"
-                      variants={cardVariants}
-                      transition={{ duration: 0.3, ease: "easeIn" }}
-                    >
-                      <picture>
-                        <img
-                          src={card.image}
-                          alt={card.title}
-                          loading="lazy"
-                          draggable="false"
-                          className="w-16 h-16 rounded-lg object-cover"
-                        />
-                      </picture>
-                      <div className="flex-1">
-                        <h3 className="text-xl font-sans text-hover dark:text-white font-semibold">
-                          {card.title}
-                        </h3>
-                        <p className="text-sm text-neutral-600 dark:text-neutral-400 pr-3">
-                          {card.description}
-                        </p>
-                      </div>
-                      <svg
-                        className="w-6 h-6 absolute right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-hover dark:text-white"
-                        viewBox="0 -960 960 960"
-                        fill="currentColor"
+                    <div key={index} className="relative group font-sans">
+                      <motion.a
+                        key={index}
+                        href={card.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="relative bg-stone-100 dark:bg-element rounded-lg shadow-md p-4 flex items-center space-x-4 hover:bg-white dark:hover:bg-body hover:shadow-none hover:ring-1 ring-stone-300 dark:ring-element shadow-black/10 dark:shadow-black/40 transition-all duration-300 group"
+                        variants={cardVariants}
+                        transition={{ duration: 0.3, ease: "easeIn" }}
                       >
-                        <path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z" />
-                      </svg>
-                    </motion.a>
+                        <picture>
+                          <img
+                            src={card.image}
+                            alt={card.title}
+                            loading="lazy"
+                            draggable="false"
+                            className="w-16 h-16 rounded-lg object-cover"
+                          />
+                        </picture>
+                        <div className="flex-1">
+                          <h3 className="text-xl font-sans text-hover dark:text-white font-semibold">
+                            {card.title}
+                          </h3>
+                          <p className="text-sm text-neutral-600 dark:text-neutral-400 pr-3">
+                            {card.description}
+                          </p>
+                        </div>
+                      </motion.a>
+                      <motion.span
+                        variants={cardVariants}
+                        transition={{ duration: 0.5, ease: "easeIn" }}
+                        title={
+                          favCards?.includes(card.title)
+                            ? "Remove from Collection"
+                            : "Add to Collection"
+                        }
+                        className="absolute top-2 right-2"
+                      >
+                        <svg
+                          fill="currentColor"
+                          className="cursor-pointer text-black dark:text-white w-5 h-5 opacity-100 md:opacity-0 group-hover:opacity-100 hover:scale-105 focus:scale-75 transition-all duration-300"
+                          viewBox="0 0 16 16"
+                          onClick={() => handleSaveToggle(card.title)}
+                        >
+                          {favCards.includes(card.title) ? (
+                            <path d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2" />
+                          ) : (
+                            <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z" />
+                          )}
+                        </svg>
+                      </motion.span>
+                    </div>
                   ))}
                 </motion.ul>
               )}

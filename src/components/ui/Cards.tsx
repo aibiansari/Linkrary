@@ -177,7 +177,7 @@ const Cards = ({ collection }: CardsProps) => {
               >
                 <svg
                   fill="currentColor"
-                  className="cursor-pointer text-black dark:text-white w-5 h-5 opacity-0 group-hover:opacity-100 group-hover:-translate-y-1 hover:scale-105 focus:scale-75 transition-all duration-300"
+                  className="cursor-pointer text-black dark:text-white w-5 h-5 opacity-100 md:opacity-0 group-hover:opacity-100 group-hover:-translate-y-1 hover:scale-105 focus:scale-75 transition-all duration-300"
                   viewBox="0 0 16 16"
                   onClick={() => handleSaveToggle(card.title)}
                 >
