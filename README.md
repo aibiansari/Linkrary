@@ -8,7 +8,7 @@ Linkrary is the ultimate resource hub, bringing together a curated selection of 
 
 ## Libraries and Frameworks
 
-- **Next,js**: A React framework to streamlines the development of Linkrary.
+- **Next.js**: A React framework to streamlines the development of Linkrary.
 - **Framer Motion**: A powerful library for animations in React, allowing you to create smooth, fluid interactions.
 - **Sonner**: A toast notification library to handle info toasts and loading states.
 - **EmailJS**: A service used for getting feedbacks and suggestions via email.
