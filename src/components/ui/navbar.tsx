@@ -103,7 +103,7 @@ const Navbar = ({ page = "home" }: PageProps) => {
 
       <div className="flex w-12 md:w-52 md:space-x-4 mb-2 md:mb-0">
         <a
-          href="https://github.com/aibiansari/Linkrary-Next"
+          href="https://github.com/aibiansari/Linkrary"
           target="_blank"
           rel="noopener noreferrer"
           className="hidden md:flex items-center text-black dark:text-white dark:hover:text-neutral-300 transition-colors duration-300 ease-in-out group"
