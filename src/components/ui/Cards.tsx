@@ -155,7 +155,7 @@ const Cards = ({ collection }: CardsProps) => {
                 className="w-16 h-16 rounded-lg object-cover"
               />
               <div className="overflow-hidden -translate-y-0.5">
-                <h1 className="text-xl text-hover dark:text-white font-semibold transition-colors duration-500">
+                <h1 className="text-xl text-hover dark:text-white font-semibold transition-colors duration-300">
                   {card.title}
                 </h1>
                 <p

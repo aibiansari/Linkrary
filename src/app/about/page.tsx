@@ -1,5 +1,4 @@
 "use client";
-import { useThemeContext } from "@/contexts/useThemeContext";
 import Navbar from "@/components/ui/navbar";
 import Contact from "@/components/ui/contact";
 
@@ -39,14 +38,8 @@ const SocialIcon: React.FC<SocialIconProps> = ({ href, viewBox, path }) => (
 );
 
 const About: React.FC = () => {
-  const { theme } = useThemeContext();
-
   return (
-    <div
-      className={`flex flex-col items-center pb-2 bg-white dark:bg-body transition-colors duration-500 ${
-        theme === "dark" ? "dark" : ""
-      }`}
-    >
+    <div className="flex flex-col items-center pb-2 bg-white dark:bg-body transition-colors duration-300">
       <Navbar page="about" />
       <div className="max-w-4xl mt-24 w-full">
         <Section title="What is Linkrary">

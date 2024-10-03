@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import { Raleway } from "next/font/google";
+import { ThemeProvider } from "next-themes";
 import "./globals.css";
 
 import { FilterButtonProvider } from "@/contexts/useFilterButtonContext";
 import { FavoriteCardsProvider } from "@/contexts/useFavoriteCardsContext";
 import { CategoryModalProvider } from "@/contexts/useCategoryModalContext";
 import { CategoryProvider } from "@/contexts/useCategoryContext";
-import { ThemeProvider } from "@/contexts/useThemeContext";
 import { Toaster } from "sonner";
 
 const raleway = Raleway({
@@ -62,29 +62,33 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ThemeProvider>
-      <CategoryProvider>
-        <FilterButtonProvider>
-          <FavoriteCardsProvider>
-            <CategoryModalProvider>
-              <html lang="en">
-                <body className={`${raleway.className} antialiased`}>
-                  <Toaster
-                    toastOptions={{
-                      style: {
-                        background: "#e5e5e5",
-                        padding: "12px",
-                        paddingLeft: "24px",
-                      },
-                    }}
-                  />
+    <CategoryProvider>
+      <FilterButtonProvider>
+        <FavoriteCardsProvider>
+          <CategoryModalProvider>
+            <html lang="en" suppressHydrationWarning>
+              <body className={`${raleway.className} antialiased`}>
+                <Toaster
+                  toastOptions={{
+                    style: {
+                      background: "#e5e5e5",
+                      padding: "12px",
+                      paddingLeft: "24px",
+                    },
+                  }}
+                />
+                <ThemeProvider
+                  themes={["light", "dark", "system"]}
+                  defaultTheme="system"
+                  attribute="class"
+                >
                   {children}
-                </body>
-              </html>
-            </CategoryModalProvider>
-          </FavoriteCardsProvider>
-        </FilterButtonProvider>
-      </CategoryProvider>
-    </ThemeProvider>
+                </ThemeProvider>
+              </body>
+            </html>
+          </CategoryModalProvider>
+        </FavoriteCardsProvider>
+      </FilterButtonProvider>
+    </CategoryProvider>
   );
 }

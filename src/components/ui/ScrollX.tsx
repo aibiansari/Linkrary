@@ -57,11 +57,11 @@ const HorizontalScroll = () => {
   }, [categoryToScroll, setCategoryToScroll]);
 
   return (
-    <div className="sticky top-16 z-10 bg-white dark:bg-body border-y-[1px] border-neutral-300 dark:border-neutral-800 transition-colors duration-500">
+    <div className="sticky top-16 z-10 bg-white dark:bg-body border-y-[1px] border-neutral-300 dark:border-neutral-800 transition-colors duration-300">
       <div className="relative flex items-center w-[96vw] md:w-[98vw] lg:w-[99vw] max-w-screen-2xl py-1.5 md:py-0 md:px-4">
         <button
           onClick={() => setButtonState(!buttonState)}
-          className="hidden md:flex py-2 px-3 items-center justify-center gap-2 bg-neutral-200 dark:bg-element hover:bg-neutral-300 dark:hover:bg-hover transition-colors duration-300 rounded-full text-neutral-900 dark:text-neutral-200 font-semibold"
+          className="hidden md:flex py-2 px-3 items-center justify-center gap-2 bg-neutral-200 dark:bg-element hover:bg-neutral-300 dark:hover:bg-hover transition-colors duration-100 rounded-full text-neutral-900 dark:text-neutral-200 font-semibold"
         >
           <svg
             width="16"
@@ -105,7 +105,7 @@ const HorizontalScroll = () => {
               ref={(el) => {
                 categoryRefs.current[index] = el;
               }}
-              className={`flex items-center gap-1.5 py-2 px-3 rounded-full transition-colors duration-300 whitespace-nowrap ${
+              className={`flex items-center gap-1.5 py-2 px-3 rounded-full transition-colors duration-100 whitespace-nowrap ${
                 selectedCategory === category.name
                   ? "bg-neutral-300 dark:bg-hover text-black dark:text-neutral-300"
                   : "text-neutral-800 dark:text-neutral-400 hover:bg-neutral-300 dark:hover:bg-hover"

@@ -18,7 +18,7 @@ const Navbar = ({ page = "home" }: PageProps) => {
 
   return (
     <nav
-      className={`bg-white dark:bg-body fixed top-0 h-16 w-screen z-20 max-w-screen-2xl text-black dark:text-white px-4 md:px-8 flex flex-wrap items-center justify-between transition-colors duration-500 ${
+      className={`bg-white dark:bg-body fixed top-0 h-16 w-screen z-20 max-w-screen-2xl text-black dark:text-white px-4 md:px-8 flex flex-wrap items-center justify-between transition-colors duration-300 ${
         page === "about"
           ? "border-b-[1px] border-neutral-400 dark:border-neutral-800"
           : ""
@@ -36,10 +36,12 @@ const Navbar = ({ page = "home" }: PageProps) => {
               alt="Linkrary Logo"
               loading="lazy"
               draggable={false}
-              className="w-6 h-6 invert dark:invert-0 transition-all duration-500"
+              className="w-6 h-6 invert dark:invert-0 transition-all duration-300"
             />
           </picture>
-          <span className="hidden md:block text-2xl font-bold">Linkrary</span>
+          <span className="hidden md:block text-2xl font-bold transition-colors duration-100">
+            Linkrary
+          </span>
         </Link>
       </div>
 
@@ -48,10 +50,10 @@ const Navbar = ({ page = "home" }: PageProps) => {
           // Search section
           <div
             onClick={() => setButtonState(!buttonState)}
-            className="relative bg-stone-200 dark:bg-element flex items-center justify-start gap-4 w-56 md:w-72 xl:w-96 p-1 md:p-2 rounded-full hover:bg-neutral-300 dark:hover:bg-hover transition-colors duration-300 ease-in cursor-pointer"
+            className="relative bg-stone-200 dark:bg-element flex items-center justify-start gap-4 w-56 md:w-72 xl:w-96 p-1 md:p-2 rounded-full hover:bg-neutral-300 dark:hover:bg-hover transition-colors duration-100 ease-in cursor-pointer"
           >
             <svg
-              className="w-5 h-5 text-black dark:text-gray-300 ml-2 transition-colors duration-300"
+              className="w-5 h-5 text-black dark:text-gray-300 ml-2 transition-colors duration-100"
               width="24"
               height="24"
               fill="none"
@@ -64,7 +66,7 @@ const Navbar = ({ page = "home" }: PageProps) => {
                 d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"
               />
             </svg>
-            <span className="text-black dark:text-neutral-500 italic font-medium transition-colors duration-300">
+            <span className="text-black dark:text-neutral-500 italic font-medium transition-colors duration-100">
               {page === "home"
                 ? "Search on Linkrary..."
                 : page === "collection"

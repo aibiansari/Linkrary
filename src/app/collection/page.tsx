@@ -2,7 +2,6 @@
 import Cards from "@/components/ui/Cards";
 import CategoryModal from "@/components/ui/categoryModal";
 import { useCategoryContext } from "@/contexts/useCategoryContext";
-import { useThemeContext } from "@/contexts/useThemeContext";
 import FilterModal from "@/components/ui/filterModal";
 import Navbar from "@/components/ui/navbar";
 import HorizontalScroll from "@/components/ui/ScrollX";
@@ -10,7 +9,6 @@ import React from "react";
 import Link from "next/link";
 
 const Collection: React.FC = () => {
-  const { theme } = useThemeContext();
   const { setSelectedCategory } = useCategoryContext();
   React.useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -20,18 +18,14 @@ const Collection: React.FC = () => {
 
   return (
     <div>
-      <div
-        className={`flex flex-col items-center min-h-screen pb-4 bg-white dark:bg-body transition-colors duration-500 ${
-          theme === "dark" ? "dark" : ""
-        }`}
-      >
+      <div className="flex flex-col items-center min-h-screen pb-4 bg-white dark:bg-body transition-colors duration-500">
         <FilterModal collection={true} />
         <CategoryModal collection={true} />
         <Navbar page="collection" />
         <HorizontalScroll />
         <div className="max-w-screen-2xl mt-16 w-full">
           <div className="flex mt-2 items-center md:gap-3">
-            <h1 className="p-8 text-3xl md:text-4xl text-black dark:text-white font-bold transition-colors duration-500">
+            <h1 className="p-8 text-3xl md:text-4xl text-black dark:text-white font-bold transition-colors duration-100">
               Collection
             </h1>
             <Link

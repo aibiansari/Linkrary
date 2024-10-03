@@ -43,24 +43,25 @@ const Contact: React.FC = () => {
         <div className="relative w-full max-w-4xl px-8">
           <label
             htmlFor="message"
-            className="absolute -top-3 left-12 font-medium text-neutral-800 dark:text-slate-200 px-2 bg-white dark:bg-body transition-colors duration-500"
+            className="absolute -top-3 left-12 font-medium text-neutral-800 dark:text-slate-200 px-2 bg-white dark:bg-body transition-colors duration-300"
           >
             Message
           </label>
           <textarea
+            id="message"
             name="message"
             placeholder="Write your message"
             autoComplete="off"
             rows={12}
             required
-            className="w-full p-3 font-sans text-neutral-800 dark:text-neutral-400 placeholder:dark:text-neutral-600 bg-transparent border border-neutral-600 dark:border-slate-200 rounded-md shadow-lg shadow-black/35 transition-colors duration-500"
+            className="w-full p-3 font-sans text-neutral-800 dark:text-neutral-400 placeholder:dark:text-neutral-600 bg-transparent border border-neutral-600 dark:border-slate-200 rounded-md shadow-lg shadow-black/35 transition-colors duration-300"
           ></textarea>
         </div>
         <div className="flex justify-center mt-4 mb-10">
           <button
             type="submit"
             disabled={loading}
-            className={`w-full font-sans md:w-48 py-2 px-6 rounded-md transition-colors duration-300 ${
+            className={`w-full font-sans md:w-48 py-2 px-6 rounded-md transition-colors duration-100 ${
               loading
                 ? "bg-neutral-500 text-neutral-300 cursor-not-allowed"
                 : "bg-neutral-800 text-white hover:bg-neutral-900 dark:bg-neutral-300 dark:font-medium dark:text-black dark:hover:bg-neutral-100"
