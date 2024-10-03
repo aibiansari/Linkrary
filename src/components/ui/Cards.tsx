@@ -150,7 +150,6 @@ const Cards = ({ collection }: CardsProps) => {
               <img
                 src={card.image}
                 alt={card.title}
-                loading="lazy"
                 draggable="false"
                 className="w-16 h-16 rounded-lg object-cover"
               />
