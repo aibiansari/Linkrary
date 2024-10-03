@@ -151,6 +151,7 @@ const Cards = ({ collection }: CardsProps) => {
                 src={card.image}
                 alt={card.title}
                 draggable="false"
+                loading="lazy"
                 className="w-16 h-16 rounded-lg object-cover"
               />
               <div className="overflow-hidden -translate-y-0.5">
