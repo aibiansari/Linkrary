@@ -12,6 +12,7 @@ Linkrary is the ultimate resource hub, bringing together a curated selection of 
 - **Framer Motion**: A powerful library for animations in React, allowing you to create smooth, fluid interactions.
 - **Sonner**: A toast notification library to handle info toasts and loading states.
 - **EmailJS**: A service used for getting feedbacks and suggestions via email.
+- **next-themes**: A lightweight library designed for managing and toggling themes in Next.js app.
 
 ## Features
 
