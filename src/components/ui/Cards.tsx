@@ -17,6 +17,7 @@ const Cards = ({ collection }: CardsProps) => {
   const cardRefs = useRef<(HTMLAnchorElement | null)[]>([]);
   const [hydrated, setHydrated] = useState(false);
   const [showSave, setShowSave] = useState(false);
+  const [loading, setLoading] = useState(true); // Step 1: Initialize opacity state
 
   // Prevent rendering until after hydration
   useEffect(() => {
@@ -108,6 +109,7 @@ const Cards = ({ collection }: CardsProps) => {
 
   useEffect(() => {
     const timer = setTimeout(() => {
+      setLoading(false); // Step 2: Set opacity to 0 after the timeout
       setShowSave(true);
     }, 100);
     return () => clearTimeout(timer); // Cleanup the timeout if the component unmounts
@@ -139,13 +141,13 @@ const Cards = ({ collection }: CardsProps) => {
               }}
               data-index={index.toString()}
               className={`bg-stone-100 dark:bg-element rounded-lg shadow-md p-4 flex items-center space-x-4 dark:hover:bg-hover 
-        ${
-          visibleCards.includes(index.toString())
-            ? "opacity-100"
-            : "opacity-0 translate-y-5"
-        } 
-        group-hover:-translate-y-1 hover:shadow-lg dark:hover:shadow-black/40 hover:shadow-black/20 shadow-black/30 
-        dark:shadow-black/50 transition-all duration-300`}
+                ${
+                  visibleCards.includes(index.toString()) || loading
+                    ? "opacity-100"
+                    : "opacity-0 translate-y-5"
+                } 
+                group-hover:-translate-y-1 hover:shadow-lg dark:hover:shadow-black/40 hover:shadow-black/20 shadow-black/30 
+                dark:shadow-black/50 transition-all duration-300`}
             >
               <img
                 src={card.image}
