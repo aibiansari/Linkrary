@@ -15,6 +15,22 @@ export const cards = [
     ],
   },
   {
+    image: "./icons/BlinkS.webp",
+    title: "BlinkSend",
+    description:
+      "Share files securely with devices on your browser over the internet.",
+    link: "https://blinksend.vercel.app",
+    categories: ["Useful Websites"],
+    tags: [
+      "quick",
+      "send file",
+      "internet sharing",
+      "transfer files",
+      "resources",
+      "free tools",
+    ],
+  },
+  {
     image: "./icons/Schnell.webp",
     title: "Schnell",
     description:
