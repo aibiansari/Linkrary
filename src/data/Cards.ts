@@ -922,6 +922,21 @@ export const cards = [
     ],
   },
   {
+    image: "./icons/GitDiagram.webp",
+    title: "GitDiagram",
+    description:
+      "A platform to turn any GitHub repo into a diagram for visualization.",
+    link: "https://gitdiagram.com",
+    categories: ["Web Development", "Useful Websites"],
+    tags: [
+      "git diagram",
+      "git tools",
+      "version control",
+      "visual diagram",
+      "developer tools",
+    ],
+  },
+  {
     image: "./icons/Glitch.webp",
     title: "Glitch",
     description: "A collaborative platform for building web apps.",
@@ -966,6 +981,20 @@ export const cards = [
       "free stock photos",
       "design resources",
       "image library",
+      "creative assets",
+    ],
+  },
+  {
+    image: "./icons/MixKit.webp",
+    title: "MixKit",
+    description: "A platform for finding free assets for video projects.",
+    link: "https://mixkit.co",
+    categories: ["Audio Tools, Video Tool, Design Inspiration"],
+    tags: [
+      "free audio video assets",
+      "design resources",
+      "audio library",
+      "video library",
       "creative assets",
     ],
   },
