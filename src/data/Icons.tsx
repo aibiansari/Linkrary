@@ -164,15 +164,15 @@ export const Converter = () => (
   </svg>
 );
 
-export const Torrent = () => (
+export const Downloads = () => (
   <svg
     fill="currentColor"
-    height={16}
-    width={16}
+    height={18}
+    width={18}
     className="text-black dark:text-white transition-colors duration-200"
     viewBox="0 0 16 16"
   >
-    <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2m3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2" />
+    <path d="M6.5 1h3v7h4L8 14.5 2.5 8h4z" />
   </svg>
 );
 
