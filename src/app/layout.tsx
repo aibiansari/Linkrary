@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { Raleway } from 'next/font/google';
 import { ThemeProvider } from 'next-themes';
-// @ts-expect-error Next.js handles global CSS imports at build time.
 import './globals.css';
 
 import { FilterButtonProvider } from '@/contexts/useFilterButtonContext';
