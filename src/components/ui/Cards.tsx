@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
-"use client";
-import { useCategoryContext } from "@/contexts/useCategoryContext";
-import { useFavoriteCardsContext } from "@/contexts/useFavoriteCardsContext";
-import { useEffect, useRef, useState } from "react";
-import { toast } from "sonner";
-import { cards } from "@/data/Cards";
+'use client';
+import { useCategoryContext } from '@/contexts/useCategoryContext';
+import { useFavoriteCardsContext } from '@/contexts/useFavoriteCardsContext';
+import { useEffect, useMemo, useRef, useState } from 'react';
+import { toast } from 'sonner';
+import { cards } from '@/data/Cards';
 
 interface CardsProps {
   collection: boolean;
@@ -12,12 +12,10 @@ interface CardsProps {
 
 const Cards = ({ collection }: CardsProps) => {
   const { selectedCategory } = useCategoryContext();
-  const [visibleCards, setVisibleCards] = useState<string[]>([]);
   const { favCards, setFavCards } = useFavoriteCardsContext();
   const cardRefs = useRef<(HTMLAnchorElement | null)[]>([]);
   const [hydrated, setHydrated] = useState(false);
   const [showSave, setShowSave] = useState(false);
-  const [loading, setLoading] = useState(true); // Step 1: Initialize opacity state
 
   // Prevent rendering until after hydration
   useEffect(() => {
@@ -28,9 +26,9 @@ const Cards = ({ collection }: CardsProps) => {
 
   // Fetch favorites from localStorage or initialize it
   useEffect(() => {
-    if (collection && typeof window !== "undefined") {
+    if (collection && typeof window !== 'undefined') {
       const collection = JSON.parse(
-        window.localStorage.getItem("Collection") || "[]"
+        window.localStorage.getItem('Collection') || '[]',
       );
       setFavCards(collection);
     }
@@ -49,7 +47,7 @@ const Cards = ({ collection }: CardsProps) => {
     if (isFavorite) {
       toast.info(`${title} removed from collection`, {
         action: {
-          label: "Undo",
+          label: 'Undo',
           onClick: () => {
             setFavCards((prevFavCards) => {
               if (!prevFavCards.includes(delCard)) {
@@ -66,50 +64,38 @@ const Cards = ({ collection }: CardsProps) => {
     }
   };
 
-  let filteredCards =
-    selectedCategory === "All Apps"
-      ? cards
-      : cards.filter((card) => card.categories.includes(selectedCategory));
+  const filteredCards = useMemo(() => {
+    let list =
+      selectedCategory === 'All Apps'
+        ? cards
+        : cards.filter((card) => card.categories.includes(selectedCategory));
+    if (collection) list = list.filter((card) => favCards.includes(card.title));
+    return list;
+  }, [selectedCategory, collection, favCards]);
 
-  // Filter further to include only favorite cards
-  if (collection) {
-    filteredCards = filteredCards.filter((card) =>
-      favCards.includes(card.title)
-    );
-  }
-
+  // Pop-in animation: toggles a data attribute straight on the DOM node,
+  // so scrolling never triggers a React re-render.
   useEffect(() => {
-    const currentRefs = cardRefs.current; // Copy refs for the effect
-
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          const cardIndex = (entry.target as HTMLElement).dataset.index;
-          if (entry.isIntersecting) {
-            setVisibleCards((prev) => [...prev, cardIndex!]);
-          } else {
-            setVisibleCards((prev) => prev.filter((i) => i !== cardIndex));
-          }
+          const el = entry.target as HTMLElement;
+          if (entry.isIntersecting) delete el.dataset.hidden;
+          else el.dataset.hidden = 'true';
         });
       },
-      { threshold: 0.1 } // Trigger when 10% of the card is visible
+      { threshold: 0.1 }, // Trigger when 10% of the card is visible
     );
 
-    currentRefs.forEach((ref) => {
+    cardRefs.current.forEach((ref) => {
       if (ref) observer.observe(ref);
     });
 
-    // Cleanup observer on unmount
-    return () => {
-      currentRefs.forEach((ref) => {
-        if (ref) observer.unobserve(ref);
-      });
-    };
+    return () => observer.disconnect();
   }, [filteredCards]);
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setLoading(false); // Step 2: Set opacity to 0 after the timeout
       setShowSave(true);
     }, 100);
     return () => clearTimeout(timer); // Cleanup the timeout if the component unmounts
@@ -123,15 +109,15 @@ const Cards = ({ collection }: CardsProps) => {
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6 px-8 py-2">
       {filteredCards.length === 0 ? (
         <p className="text-center text-neutral-600 italic dark:text-neutral-400 col-span-full">
-          No favorite cards available. Add some to your{" "}
-          {selectedCategory === "All Apps"
-            ? "collection"
+          No favorite cards available. Add some to your{' '}
+          {selectedCategory === 'All Apps'
+            ? 'collection'
             : `${selectedCategory} collection`}
           !
         </p>
       ) : (
         filteredCards.map((card, index) => (
-          <div key={index} className="relative group font-sans">
+          <div key={card.title} className="relative group font-sans">
             <a
               href={card.link}
               target="_blank"
@@ -139,27 +125,22 @@ const Cards = ({ collection }: CardsProps) => {
               ref={(el) => {
                 cardRefs.current[index] = el;
               }}
-              data-index={index.toString()}
               className={`bg-stone-100 dark:bg-element rounded-lg shadow-md p-4 flex items-center space-x-4 dark:hover:bg-hover 
-                ${
-                  visibleCards.includes(index.toString()) || loading
-                    ? "opacity-100"
-                    : "opacity-0 translate-y-5"
-                } 
+                data-[hidden=true]:opacity-0 data-[hidden=true]:translate-y-5
                 group-hover:-translate-y-1 hover:shadow-lg dark:hover:shadow-black/40 hover:shadow-black/20 shadow-black/30 
                 dark:shadow-black/50 transition-all duration-300`}
             >
               <img
                 src={card.image}
-                alt={card.title}
+                alt=""
                 draggable="false"
                 loading="lazy"
                 className="w-16 h-16 rounded-lg object-cover"
               />
               <div className="overflow-hidden -translate-y-0.5">
-                <h1 className="text-xl text-hover dark:text-white font-semibold transition-colors duration-300">
+                <h2 className="text-xl text-hover dark:text-white font-semibold transition-colors duration-300">
                   {card.title}
-                </h1>
+                </h2>
                 <p
                   title={card.description}
                   className="text-sm text-neutral-600 dark:text-neutral-400 line-clamp-2"
@@ -172,8 +153,8 @@ const Cards = ({ collection }: CardsProps) => {
               <span
                 title={
                   favCards?.includes(card.title)
-                    ? "Remove from Collection"
-                    : "Add to Collection"
+                    ? 'Remove from Collection'
+                    : 'Add to Collection'
                 }
                 className="absolute top-2 right-2"
               >

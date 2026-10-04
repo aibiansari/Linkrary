@@ -1,27 +1,27 @@
-import { useFilterButtonContext } from "@/contexts/useFilterButtonContext";
-import { useCategoryContext } from "@/contexts/useCategoryContext";
-import Dropdown from "./dropdown";
-import Link from "next/link";
+import { useFilterButtonContext } from '@/contexts/useFilterButtonContext';
+import { useCategoryContext } from '@/contexts/useCategoryContext';
+import Dropdown from './dropdown';
+import Link from 'next/link';
 
 type PageProps = {
-  page: "home" | "collection" | "about";
+  page: 'home' | 'collection' | 'about';
 };
 
-const Navbar = ({ page = "home" }: PageProps) => {
+const Navbar = ({ page = 'home' }: PageProps) => {
   const { buttonState, setButtonState } = useFilterButtonContext();
   const { setSelectedCategory, setCategoryToScroll } = useCategoryContext();
 
   const handleClick = () => {
-    setSelectedCategory("All Apps");
-    setCategoryToScroll("All Apps");
+    setSelectedCategory('All Apps');
+    setCategoryToScroll('All Apps');
   };
 
   return (
     <nav
       className={`bg-white dark:bg-body fixed top-0 h-16 w-screen z-20 max-w-screen-2xl text-black dark:text-white px-4 md:px-8 flex flex-wrap items-center justify-between transition-colors duration-300 ${
-        page === "about"
-          ? "border-b-[1px] border-neutral-400 dark:border-neutral-800"
-          : ""
+        page === 'about'
+          ? 'border-b-[1px] border-neutral-400 dark:border-neutral-800'
+          : ''
       }`}
     >
       <div className="flex-shrink-0 w-12 md:w-52 flex items-center mb-2 md:mb-0">
@@ -34,7 +34,6 @@ const Navbar = ({ page = "home" }: PageProps) => {
             <img
               src="./logo.svg"
               alt="Linkrary Logo"
-              loading="lazy"
               draggable={false}
               className="w-6 h-6 invert dark:invert-0 transition-all duration-300"
             />
@@ -46,7 +45,7 @@ const Navbar = ({ page = "home" }: PageProps) => {
       </div>
 
       <div className="flex flex-grow justify-center mb-2 md:mb-0">
-        {page === "home" || page === "collection" ? (
+        {page === 'home' || page === 'collection' ? (
           // Search section
           <div
             onClick={() => setButtonState(!buttonState)}
@@ -67,22 +66,22 @@ const Navbar = ({ page = "home" }: PageProps) => {
               />
             </svg>
             <span className="text-black dark:text-neutral-500 italic font-medium transition-colors duration-100">
-              {page === "home"
-                ? "Search on Linkrary..."
-                : page === "collection"
-                ? "Search in Collection..."
-                : ""}
+              {page === 'home'
+                ? 'Search on Linkrary...'
+                : page === 'collection'
+                  ? 'Search in Collection...'
+                  : ''}
             </span>
-            <div className="absolute hidden lg:flex right-4 items-center gap-1.5 text-neutral-500 text-sm">
-              <kbd className="ring-neutral-400 dark:ring-neutral-600 ring-1 px-1 rounded transition-colors duration-300">
+            <div className="absolute hidden lg:flex right-4 items-center gap-1.5 text-neutral-600 text-sm">
+              <kbd className="ring-neutral-500 dark:ring-neutral-600 ring-1 px-1 rounded transition-colors duration-300">
                 Ctrl
               </kbd>
-              <kbd className="ring-neutral-400 dark:ring-neutral-600 ring-1 px-1 rounded transition-colors duration-300">
+              <kbd className="ring-neutral-500 dark:ring-neutral-600 ring-1 px-1 rounded transition-colors duration-300">
                 K
               </kbd>
             </div>
           </div>
-        ) : page === "about" ? (
+        ) : page === 'about' ? (
           // About section with links
           <div className="flex items-center gap-10">
             <Link

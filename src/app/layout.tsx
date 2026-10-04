@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Raleway } from 'next/font/google';
 import { ThemeProvider } from 'next-themes';
+// @ts-expect-error Next.js handles global CSS imports at build time.
 import './globals.css';
 
 import { FilterButtonProvider } from '@/contexts/useFilterButtonContext';
@@ -11,14 +12,25 @@ import { Toaster } from 'sonner';
 
 const raleway = Raleway({
   subsets: ['latin'],
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+  weight: ['400', '500', '600', '700'],
   style: ['normal', 'italic'],
 });
 
 export const metadata: Metadata = {
-  title: 'Linkrary',
+  title: {
+    default: 'Linkrary',
+    template: '%s | Linkrary',
+  },
   description:
     'Linkrary is the ultimate resource hub, bringing together a curated selection of the best web tools, design inspiration, development utilities, and more.',
+  alternates: { canonical: 'https://aibiansari.github.io/Linkrary/' },
+  openGraph: {
+    title: 'Linkrary',
+    url: 'https://aibiansari.github.io/Linkrary/',
+    siteName: 'Linkrary',
+    type: 'website',
+    images: ['https://aibiansari.github.io/Linkrary/logo.svg'],
+  },
   authors: [{ name: 'Abdullah Ansari' }],
   keywords: [
     'linkrary',
@@ -82,7 +94,7 @@ export default function RootLayout({
                   defaultTheme="system"
                   attribute="class"
                 >
-                  {children}
+                  <main>{children}</main>
                 </ThemeProvider>
               </body>
             </html>
