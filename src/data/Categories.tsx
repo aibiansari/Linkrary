@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react';
 import {
   AllApps,
   AiTools,
@@ -20,44 +21,56 @@ import {
 } from './Icons';
 import { cards } from './Cards';
 
-// Type for categoryCount
 type CategoryCount = {
   [key: string]: number;
 };
 
-// Array of category names and their corresponding icons
-const categoryDetails = [
-  { name: 'All Apps', icon: <AllApps /> },
-  { name: 'AI Tools', icon: <AiTools /> },
-  { name: 'Audio Tools', icon: <AudioTools /> },
-  { name: 'Video Tools', icon: <VideoTools /> },
-  { name: 'Design Tools', icon: <DesignTools /> },
-  { name: 'Image Utilities', icon: <ImageUtils /> },
-  { name: 'Game Libraries', icon: <Games /> },
-  { name: 'Design Inspiration', icon: <DesignInsp /> },
-  { name: 'Web Development', icon: <WebDev /> },
-  { name: 'SVG Icons', icon: <SVGs /> },
-  { name: 'Font Resources', icon: <Fonts /> },
-  { name: 'Web Libraries', icon: <WebLibs /> },
-  { name: 'File Converters', icon: <Converter /> },
-  { name: 'Archive Downloads', icon: <Downloads /> },
-  { name: 'Useful Websites', icon: <UsefulSites /> },
-  { name: 'Streaming Services', icon: <Streaming /> },
-  { name: 'PDF Utilities', icon: <PDF /> },
-  { name: 'Stock Images', icon: <Stock /> },
-];
+type CategoryDefinition = {
+  name: string;
+  icon: ReactNode;
+};
 
-// Function to count occurrences of all categories in cards
+type Category = CategoryDefinition & {
+  count: number;
+};
+
+const categoryIcons: Record<string, () => JSX.Element> = {
+  'All Apps': AllApps,
+  'AI Tools': AiTools,
+  'Audio Tools': AudioTools,
+  'Video Tools': VideoTools,
+  'Design Tools': DesignTools,
+  'Image Utilities': ImageUtils,
+  'Game Libraries': Games,
+  'Design Inspiration': DesignInsp,
+  'Web Development': WebDev,
+  'SVG Icons': SVGs,
+  'Font Resources': Fonts,
+  'Web Libraries': WebLibs,
+  'File Converters': Converter,
+  'Archive Downloads': Downloads,
+  'Useful Websites': UsefulSites,
+  'Streaming Services': Streaming,
+  'PDF Utilities': PDF,
+  'Stock Images': Stock,
+};
+
+const categoryDetails: CategoryDefinition[] = Object.entries(categoryIcons).map(
+  ([name, IconComponent]) => ({
+    name,
+    icon: <IconComponent />,
+  }),
+);
+
 const countAllCategories = () => {
   const categoryCount: CategoryCount = categoryDetails.reduce(
     (acc, category) => ({
       ...acc,
       [category.name]: category.name === 'All Apps' ? cards.length : 0,
     }),
-    {},
+    {} as CategoryCount,
   );
 
-  // Increment category counts based on card categories
   cards.forEach((card) => {
     card.categories.forEach((category) => {
       if (category in categoryCount) {
@@ -69,12 +82,9 @@ const countAllCategories = () => {
   return categoryCount;
 };
 
-// Get the counts for each category
 const categoryCounts = countAllCategories();
 
-// Build the categories array dynamically
-export const categories = categoryDetails.map((category) => ({
-  name: category.name,
-  icon: category.icon,
+export const categories: Category[] = categoryDetails.map((category) => ({
+  ...category,
   count: categoryCounts[category.name] || 0,
 }));
