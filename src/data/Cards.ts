@@ -2742,7 +2742,7 @@ export const cards = [
     tags: ['video editing', 'browser', 'screen recording'],
   },
   {
-    image: './icons/FlexClip.webp',
+    image: './icons/Flexclip.webp',
     title: 'FlexClip',
     description: 'Browser video editor with templates and a screen recorder.',
     link: 'https://www.flexclip.com',
@@ -2828,7 +2828,7 @@ export const cards = [
     tags: ['documentation', 'reference', 'offline'],
   },
   {
-    image: './icons/roadmapsh.webp',
+    image: './icons/Roadmapsh.webp',
     title: 'roadmap.sh',
     description:
       'Step-by-step learning roadmaps for developer roles and skills.',
@@ -2837,7 +2837,7 @@ export const cards = [
     tags: ['roadmap', 'learning', 'career'],
   },
   {
-    image: './icons/responsivetesttool.webp',
+    image: './icons/Responsivetesttool.webp',
     title: 'Responsive Test Tool',
     description:
       'Test your website on different screen sizes and devices Online.',
@@ -2949,7 +2949,7 @@ export const cards = [
     tags: ['pdf', 'tools', 'convert'],
   },
   {
-    image: './icons/itchio.webp',
+    image: './icons/Itchio.webp',
     title: 'itch.io',
     description:
       'Thousands of indie games, jams and demos, many free or pay-what-you-want.',
