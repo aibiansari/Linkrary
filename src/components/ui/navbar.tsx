@@ -38,7 +38,7 @@ const Navbar = ({ page = 'home' }: PageProps) => {
               className="w-6 h-6 invert dark:invert-0 transition-all duration-300"
             />
           </picture>
-          <span className="hidden md:block text-2xl font-bold transition-colors duration-100">
+          <span className="hidden md:block text-2xl font-bold text-black dark:text-white transition-colors duration-100">
             Linkrary
           </span>
         </Link>

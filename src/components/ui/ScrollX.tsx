@@ -1,8 +1,8 @@
-"use client";
-import { useEffect, useRef } from "react";
-import { useCategoryModalContext } from "@/contexts/useCategoryModalContext";
-import { useCategoryContext } from "@/contexts/useCategoryContext";
-import { categories } from "@/data/Categories";
+'use client';
+import { useEffect, useRef } from 'react';
+import { useCategoryModalContext } from '@/contexts/useCategoryModalContext';
+import { useCategoryContext } from '@/contexts/useCategoryContext';
+import { categories } from '@/data/Categories';
 
 const HorizontalScroll = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -15,16 +15,16 @@ const HorizontalScroll = () => {
     setCategoryToScroll,
   } = useCategoryContext();
 
-  const scroll = (direction: "left" | "right") => {
+  const scroll = (direction: 'left' | 'right') => {
     if (scrollRef.current) {
-      const scrollAmount = direction === "left" ? -300 : 300;
-      scrollRef.current.scrollBy({ left: scrollAmount, behavior: "smooth" });
+      const scrollAmount = direction === 'left' ? -300 : 300;
+      scrollRef.current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
     }
   };
 
   const handleCategoryClick = (name: string) => {
     setSelectedCategory(name);
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 
     const index = categories.findIndex((category) => category.name === name);
     if (index !== -1 && categoryRefs.current[index] && scrollRef.current) {
@@ -36,12 +36,12 @@ const HorizontalScroll = () => {
       if (left < containerLeft) {
         scrollRef.current.scrollBy({
           left: left - containerLeft - width / 2,
-          behavior: "smooth",
+          behavior: 'smooth',
         });
       } else if (right > containerRight) {
         scrollRef.current.scrollBy({
           left: right - containerRight + width / 2,
-          behavior: "smooth",
+          behavior: 'smooth',
         });
       }
     }
@@ -67,7 +67,7 @@ const HorizontalScroll = () => {
             width="16"
             height="16"
             fill="currentColor"
-            className="text-neutral-800 dark:text-neutral-200 -translate-y-[1px] transition-colors duration-300"
+            className="text-neutral-800 dark:text-neutral-200 -translate-y-[1px] transition-colors duration-100"
             viewBox="0 0 16 16"
           >
             <path
@@ -79,7 +79,7 @@ const HorizontalScroll = () => {
         </button>
         <div className="hidden md:block h-9 w-[1.4px] shrink-0 bg-neutral-300 dark:bg-element ml-5 mr-1"></div>
         <button
-          onClick={() => scroll("left")}
+          onClick={() => scroll('left')}
           className="hidden md:block p-2"
           aria-label="Scroll Left"
         >
@@ -97,7 +97,7 @@ const HorizontalScroll = () => {
         <div
           ref={scrollRef}
           className="flex font-sans overflow-x-auto text-sm md:text-base space-x-2 md:space-x-6"
-          style={{ scrollbarWidth: "none" }}
+          style={{ scrollbarWidth: 'none' }}
         >
           {categories.map((category, index) => (
             <button
@@ -107,8 +107,8 @@ const HorizontalScroll = () => {
               }}
               className={`flex items-center gap-1.5 py-2 px-3 rounded-full transition-colors duration-100 whitespace-nowrap ${
                 selectedCategory === category.name
-                  ? "bg-neutral-300 dark:bg-hover text-black dark:text-neutral-300"
-                  : "text-neutral-800 dark:text-neutral-400 hover:bg-neutral-300 dark:hover:bg-hover"
+                  ? 'bg-neutral-300 dark:bg-hover text-black dark:text-neutral-300'
+                  : 'text-neutral-800 dark:text-neutral-400 hover:bg-neutral-300 dark:hover:bg-hover'
               }`}
               onClick={() => handleCategoryClick(category.name)}
             >
@@ -118,7 +118,7 @@ const HorizontalScroll = () => {
           ))}
         </div>
         <button
-          onClick={() => scroll("right")}
+          onClick={() => scroll('right')}
           className="hidden md:block p-2"
           aria-label="Scroll Right"
         >
