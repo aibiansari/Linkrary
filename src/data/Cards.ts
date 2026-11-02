@@ -31,6 +31,30 @@ export const cards = [
     ],
   },
   {
+    image: './icons/DukoTools.webp',
+    title: 'DukoTools',
+    description:
+      'PDF, image, text, developer, finance, and South Asian niche tools — all in one place.',
+    link: 'https://www.dukotools.com',
+    categories: [
+      'Useful Websites',
+      'Design Tools',
+      'Image Utilities',
+      'Web Libraries',
+      'File Converters',
+      'PDF Utilities',
+    ],
+    tags: [
+      'All in One',
+      'PDF Utilities',
+      'Image to Text',
+      'design tools',
+      'free No SignUp',
+      'developer tools',
+      'finance tools',
+    ],
+  },
+  {
     image: './icons/Schnell.webp',
     title: 'Schnell',
     description:

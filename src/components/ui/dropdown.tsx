@@ -1,10 +1,10 @@
 "use client";
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import { useState, useEffect, useRef } from "react";
 import { useTheme } from "next-themes";
 import Link from "next/link";
 
-const wrapperVariants = {
+const wrapperVariants: Variants = {
   open: {
     scaleY: 1,
     opacity: 1,
@@ -26,7 +26,7 @@ const wrapperVariants = {
   },
 };
 
-const itemVariants = {
+const itemVariants: Variants = {
   open: {
     opacity: 1,
     y: 0,
